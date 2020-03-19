@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Magz is a HTML5 & CSS3 magazine template is based on Bootstrap 3.">
+
+
+	<title>Magz &mdash; Responsive HTML5 &amp; CSS3 Magazine Template</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.css">
+	<!-- IonIcons -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/ionicons/css/ionicons.min.css">
+	<!-- Toast -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/toast/jquery.toast.min.css">
+	<!-- OwlCarousel -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/magnific-popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.css">
+	<!-- Custom style -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/style.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/skins/all.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/demo.css">
+</head>
+
+<body>
+	<header class="primary">
+  <div class="firstbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="brand">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Magz Logo">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <form class="search" autocomplete="off">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Type something here">
+                <div class="input-group-btn">
+                  <button class="btn btn-primary"><i class="ion-search"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="help-block">
+              <div>热门:</div>
+              <ul>
+                
+                <li><a href='/dedecms/tags.php?/%E5%B8%83%E5%B1%80/'>布局</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E6%88%91%E4%BB%AC/'>我们</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Ajax/'>Ajax</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E7%94%A8/'>用</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Dreamweaver/'>Dreamweaver</a></li>
+                
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 col-sm-12 text-right">
+          <ul class="nav-icons">
+            <li><a href="register.html"><i class="ion-person-add"></i>
+                <div>注 册</div>
+              </a></li>
+            <li><a href="login.html"><i class="ion-person"></i>
+                <div>登 录</div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start nav --> 
+  <nav class="menu">
+    <div class="container">
+      <div class="brand">
+        <a href="#">
+          <img src="images/logo.png" alt="Magz Logo">
+        </a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="menu" data-target="#menu-list"><i class="ion-navicon-round"></i></a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="sidebar" data-target="#sidebar"><i class="ion-ios-arrow-left"></i></a>
+      </div>
+      <div id="menu-list">
+        <ul class="nav-list">
+          <li class="for-tablet nav-title"><a>Menu</a></li>
+          <li class="for-tablet"><a href="login.html">Login</a></li>
+          <li class="for-tablet"><a href="register.html">Register</a></li>
+          <li><a href="/dedecms/">主页</a></li>
+          <li class="dropdown magz-dropdown"><a href="/dedecms/a/webbase/">网页基础 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+              <li><a href="/dedecms/a/webbase/html/">HTML</a></li>
+              
+              <li><a href="/dedecms/a/webbase/div-css/">DIV&CSS</a></li>
+              
+              <li><a href="/dedecms/a/webbase/javascript-ajax/">Javascript/Ajax</a></li>
+              
+              <li><a href="/dedecms/a/webbase/dreamweaver/">Dreamweaver</a></li>
+              
+            </ul>
+          </li><li class="dropdown magz-dropdown"><a href="/dedecms/a/pics/">站长图集 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+            </ul>
+          </li><li class="dropdown magz-dropdown"><a href="/dedecms/a/downloads/">软件下载 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+            </ul>
+          </li><li class="dropdown magz-dropdown"><a href="/dedecms/a/xinwen/">新闻 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End nav -->
+</header>
+
+	<section class="category">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 text-left">
+					<div class="row">
+						<div class="col-md-12">
+							<ol class="breadcrumb">
+								<li><a href="#"><a href='http://localhost/dedecms'>主页</a> > <a href='/dedecms/a/webbase/'>网页基础</a> > <a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a> > </a></li>
+							</ol>
+							<h1 class="page-title">Category: Computer</h1>
+							<p class="page-subtitle">Showing all posts with category <i>Computer</i></p>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="row">
+						<article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/div-css/2010/0407/21.html'><img src='/dedecms/images/defaultpic.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a>">DIV&CSS</a>
+										</div>
+										<div class="time">2010-04-07 09:32:53</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/div-css/2010/0407/21.html">5种方法立刻写出更好的CSS代码</a>
+									</h1>
+									<p>
+										当然，每个人都可以编写CSS代码，甚至你现在已经让它为你的项目工作了。但是CSS还可以更好吗？开始用这5个Tips改进你的CSS吧！ 1.重置 首先，很认真的告诉你， 总是要重置某些分类 。无论你是使用 Eric Meyer Reset 、 YUI Reset 或者你自己编写的重置代码，...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/div-css/2010/0407/21.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/div-css/2010/0407/26.html'><img src='http://localhost/dedecms/uploads/allimg/c100407/12F603930W50-12401_lit.png'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a>">DIV&CSS</a>
+										</div>
+										<div class="time">2010-04-07 09:32:53</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/div-css/2010/0407/26.html">CSS 中的黄金分割率</a>
+									</h1>
+									<p>
+										这是一位叫 Christos Chiotis 的希腊 Web 设计师发表在 CssGlobe 的一篇文章，讲述了黄金分割率在 CSS 中的应用。黄金分割率是一个应用广泛的数学常数，大约为 1.6180339887。黄金分割率用在 Web 设计中，可以为设计带来更多视觉上的和谐。 在一个简单的两栏...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/div-css/2010/0407/26.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/div-css/2010/0407/27.html'><img src='http://localhost/dedecms/uploads/allimg/c100407/12F603932K20-31036_lit.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a>">DIV&CSS</a>
+										</div>
+										<div class="time">2010-04-07 09:32:53</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/div-css/2010/0407/27.html">用CSS设计你的搜索框</a>
+									</h1>
+									<p>
+										今天我将介绍一下如何使用CSS中的背景图片来设计你的搜索框。之前我使用别的方法来实现我的表单和搜索框，但是这种方法看起来会更容易些，所以我想将它与感兴趣的朋友分享。 View Demo 原始方式 首先来让我们看看我的原始的使用input type=image src=image_u...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/div-css/2010/0407/27.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/div-css/2010/0407/28.html'><img src='http://localhost/dedecms/uploads/allimg/c100407/12F60393415040-55N2_lit.png'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a>">DIV&CSS</a>
+										</div>
+										<div class="time">2010-04-07 09:32:53</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/div-css/2010/0407/28.html">为今后的项目制作空白CSS模板文件</a>
+									</h1>
+									<p>
+										如果你曾经收藏过许多关于CSS的最佳实践但还没开始利用它们，那么这篇文章将帮助你制作一个很好且很有组织的CSS文件来应用于一些CSS最佳实践。在 这里我将为为我的下一个项目制作一个基本的CSS模板文件。使用标准的重设(Reset)方法，定义一些基本的方便的类...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/div-css/2010/0407/28.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/div-css/2010/0407/29.html'><img src='http://localhost/dedecms/uploads/allimg/c100407/12F60393525250-A528_lit.png'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a>">DIV&CSS</a>
+										</div>
+										<div class="time">2010-04-07 09:32:53</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/div-css/2010/0407/29.html">简洁纯净的CSS表单设计实例</a>
+									</h1>
+									<p>
+										很多CSS爱好者不喜欢HTML表格，尤其是在制作表单的时候，虽然现在已经是XHTML+CSS的年代，但表单的设计大多还在采用table来布局。那 么，有没有更好的使用纯语义化XHTML+CSS设计表单方法呢？今天让我们一起来尝试这种更符合语义化的方法来代替Table嵌套的表...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/div-css/2010/0407/29.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/div-css/2010/0407/30.html'><img src='http://localhost/dedecms/uploads/allimg/c100407/12F60393KXP-S429_lit.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a>">DIV&CSS</a>
+										</div>
+										<div class="time">2010-04-07 09:32:53</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/div-css/2010/0407/30.html">精选15个国外CSS框架</a>
+									</h1>
+									<p>
+										什么是css框架 实际上还是让我们从框架说起吧。 框架就是一个你可以用于你的网站项目的基本的概念上的结构体。 css框架通常只是一些css文件的集合，这些文件包括基本布局、表单样式、网格或简单结构、以及样式重置。比如： typography.css基本排版规则 grid....
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/div-css/2010/0407/30.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/div-css/2010/0407/31.html'><img src='/dedecms/images/defaultpic.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a>">DIV&CSS</a>
+										</div>
+										<div class="time">2010-04-07 09:32:53</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/div-css/2010/0407/31.html">使用CSS为图片添加更多趣味的5种方法</a>
+									</h1>
+									<p>
+										今天我们将向大家分享一些为你平淡乏味的图片添加更多趣味情调的简单技巧。使用Photoshop为每个图片添加某种样式虽然可行，但会是相当乏味且困难的长久工作。下面要介绍的CSS技巧将帮助你从痛苦中解脱出来！如果你也有自己独到的CSS技巧，希望能一同分享。...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/div-css/2010/0407/31.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/div-css/2010/0407/32.html'><img src='http://localhost/dedecms/uploads/allimg/c100407/12F60394543310-14b8_lit.png'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a>">DIV&CSS</a>
+										</div>
+										<div class="time">2010-04-07 09:32:53</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/div-css/2010/0407/32.html">20个让你学习并精通CSS的网站</a>
+									</h1>
+									<p>
+										CSS的学习过程既可以说简单又可以说是复杂。CSS的语法比较简单，但CSS的应用中有一些概念(一可以说是原理)还是很难掌握的。今天暴风彬彬 向你推荐20个出色的CSS技术类(英语)网站帮你更好的理解和掌握CSS，其中包括各种各样的网站，从博客到清单风格列表甚至...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/div-css/2010/0407/32.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article>
+						
+						<div class="col-md-12 text-center">
+							<ul class="pagination">
+								<li class="prev"><a href="#"><i class="ion-ios-arrow-left"></i></a></li>
+								<li>首页</li>
+<li class="thisclass">1</li>
+<li><a href='list_3_2.html'>2</a></li>
+<li><a href='list_3_2.html'>下一页</a></li>
+<li><a href='list_3_2.html'>末页</a></li>
+<li><select name='sldd' style='width:36px' onchange='location.href=this.options[this.selectedIndex].value;'>
+<option value='list_3_1.html' selected>1</option>
+<option value='list_3_2.html'>2</option>
+</select></li>
+<li><span class="pageinfo">共 <strong>2</strong>页<strong>13</strong>条</span></li>
+
+								<li class="next"><a href="#"><i class="ion-ios-arrow-right"></i></a></li>
+							</ul>
+							<div class="pagination-help-text">
+								Showing 8 results of 776 &mdash; Page 1
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 sidebar">
+					<!-- <aside>
+						<div class="aside-body">
+							<figure class="ads">
+								<a href="single.html">
+									<img src="images/ad.png">
+								</a>
+								<figcaption>Advertisement</figcaption>
+							</figure>
+						</div>
+					</aside> -->
+					<aside>
+						<h1 class="aside-title">最新文章</h1>
+						<div class="aside-body">
+							<article class="article-fw">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/div-css/2010/0407/33.html">
+											<img src="http://localhost/dedecms/uploads/allimg/c100407/12F60395AI60-21A37_lit.png" alt="你应当了解的5个CSS3新技术">
+										</a>
+									</figure>
+									<div class="details">
+										<div class="detail">
+											<div class="time">2010-04-07</div>
+											<div class="category"><a href="<a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a>">DIV&CSS</a>
+											</div>
+										</div>
+										<h1><a href="/dedecms/a/webbase/div-css/2010/0407/33.html">你应当了解的5个CSS3新技术</a></h1>
+										<p>
+											
+										</p>
+									</div>
+								</div>
+							</article>
+
+							<div class="line"></div>
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/div-css/2010/0407/32.html">
+											<img src="http://localhost/dedecms/uploads/allimg/c100407/12F60394543310-14b8_lit.png" alt="20个让你学习并精通CSS的网">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/div-css/2010/0407/32.html">20个让你学习并精通CSS的网</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/div-css/2010/0407/31.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="使用CSS为图片添加更多趣">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/div-css/2010/0407/31.html">使用CSS为图片添加更多趣</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/div-css/2010/0407/30.html">
+											<img src="http://localhost/dedecms/uploads/allimg/c100407/12F60393KXP-S429_lit.gif" alt="精选15个国外CSS框架">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/div-css/2010/0407/30.html">精选15个国外CSS框架</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+
+						</div>
+					</aside>
+					<aside>
+						<div class="aside-body">
+							<form class="newsletter">
+								<div class="icon">
+									<i class="ion-ios-email-outline"></i>
+									<h1>Newsletter</h1>
+								</div>
+								<div class="input-group">
+									<input type="email" class="form-control email" placeholder="Your mail">
+									<div class="input-group-btn">
+										<button class="btn btn-primary"><i class="ion-paper-airplane"></i></button>
+									</div>
+								</div>
+								<p>By subscribing you will receive new articles in your email.</p>
+							</form>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- Start footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">气象海洋</h1>
+						<div class="block-body">
+							<figure class="foot-logo">
+								<img src="images/logo-light.png" class="img-responsive" alt="Logo">
+							</figure>
+							<p class="brand-description">
+								Magz is a HTML5 &amp; CSS3 magazine template based on Bootstrap 3.
+							</p>
+							<a href="page.html" class="btn btn-magz white">About Us <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">友情链接 <div class="right"><a href="#">更多 <i
+										class="ion-ios-arrow-thin-right"></i></a></div>
+						</h1>
+						<div class="block-body">
+							<ul class="tags">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">新闻</h1>
+						<div class="block-body">
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img12.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">Donec consequat lorem quis augue pharetra</a></h1>
+									</div>
+								</div>
+							</article>
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img14.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">eu dapibus risus aliquam etiam ut venenatis</a></h1>
+									</div>
+								</div>
+							</article>
+
+							<a href="#" class="btn btn-magz white btn-block">更多 <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-12 col-sm-6">
+					<div class="block">
+						<h1 class="block-title">联系我们</h1>
+						<div class="block-body">
+							<p>Follow us and stay in touch to get the latest news</p>
+							<ul class="social trp">
+								<li>
+									<a href="#" class="facebook">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="twitter">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-twitter-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="youtube">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-youtube-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="googleplus">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-googleplus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="instagram">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-instagram-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tumblr">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-tumblr"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dribbble">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-dribbble"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="linkedin">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="skype">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-skype"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="rss">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-rss"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="block">
+						<div class="block-body no-margin">
+							<ul class="footer-nav-horizontal">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Partner</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="page.html">About</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="copyright">
+						COPYRIGHT &copy; 气象海洋 2020. ALL RIGHT RESERVED. <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- JS -->
+	<script src="/dedecms/templets/magz/js/jquery.js"></script>
+	<script src="/dedecms/templets/magz/js/jquery.migrate.js"></script>
+	<script src="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.js"></script>
+	<script>
+		var $target_end = $(".best-of-the-week");
+	</script>
+	<script src="/dedecms/templets/magz/scripts/jquery-number/jquery.number.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/easescroll/jquery.easeScroll.js"></script>
+	<script src="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/toast/jquery.toast.min.js"></script>
+	<script src="/dedecms/templets/magz/js/demo.js"></script>
+	<script src="/dedecms/templets/magz/js/e-magz.js"></script>
+</body>
+
+</html>

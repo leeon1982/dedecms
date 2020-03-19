@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Magz is a HTML5 & CSS3 magazine template is based on Bootstrap 3.">
+
+
+	<title>Magz &mdash; Responsive HTML5 &amp; CSS3 Magazine Template</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.css">
+	<!-- IonIcons -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/ionicons/css/ionicons.min.css">
+	<!-- Toast -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/toast/jquery.toast.min.css">
+	<!-- OwlCarousel -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/magnific-popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.css">
+	<!-- Custom style -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/style.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/skins/all.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/demo.css">
+</head>
+
+<body>
+	<header class="primary">
+  <div class="firstbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="brand">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Magz Logo">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <form class="search" autocomplete="off">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Type something here">
+                <div class="input-group-btn">
+                  <button class="btn btn-primary"><i class="ion-search"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="help-block">
+              <div>热门:</div>
+              <ul>
+                
+                <li><a href='/dedecms/tags.php?/%E5%B8%83%E5%B1%80/'>布局</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E6%88%91%E4%BB%AC/'>我们</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Ajax/'>Ajax</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E7%94%A8/'>用</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Dreamweaver/'>Dreamweaver</a></li>
+                
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 col-sm-12 text-right">
+          <ul class="nav-icons">
+            <li><a href="register.html"><i class="ion-person-add"></i>
+                <div>注 册</div>
+              </a></li>
+            <li><a href="login.html"><i class="ion-person"></i>
+                <div>登 录</div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start nav -->
+  <nav class="menu">
+    <div class="container">
+      <div class="brand">
+        <a href="#">
+          <img src="images/logo.png" alt="Magz Logo">
+        </a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="menu" data-target="#menu-list"><i class="ion-navicon-round"></i></a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="sidebar" data-target="#sidebar"><i class="ion-ios-arrow-left"></i></a>
+      </div>
+      <div id="menu-list">
+        <ul class="nav-list">
+          <li class="for-tablet nav-title"><a>Menu</a></li>
+          <li class="for-tablet"><a href="login.html">Login</a></li>
+          <li class="for-tablet"><a href="register.html">Register</a></li>
+          <li><a href="/dedecms/">主页</a></li>
+          
+          <li class="dropdown magz-dropdown magz-dropdown-megamenu"><a href="#">网上公开 <i
+            class="ion-ios-arrow-right"></i>
+          <div class="badge">Hot</div>
+
+          <div class="dropdown-menu megamenu">
+            <div class="megamenu-inner">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="megamenu-title">测试功能</h2>
+                    </div>
+                  </div>
+                  <ul class="vertical-menu">
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="megamenu-title">网上信箱</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="队长信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">队长信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="政委信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">政委信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="纪委信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">政委信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </li>
+          <li class="dropdown magz-dropdown"><a href="#">Dropdown Icons <i class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="icon ion-person"></i> My Account</a></li>
+              <li><a href="#"><i class="icon ion-heart"></i> Favorite</a></li>
+              <li><a href="#"><i class="icon ion-chatbox"></i> Comments</a></li>
+              <li><a href="#"><i class="icon ion-key"></i> Change Password</a></li>
+              <li><a href="#"><i class="icon ion-settings"></i> Settings</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon ion-log-out"></i> Logout</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End nav -->
+</header>
+
+	<section class="single">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<ol class="breadcrumb">
+						<li><a href='http://localhost/dedecms'>主页</a> > <a href='/dedecms/a/webbase/'>网页基础</a> > <a href='/dedecms/a/webbase/javascript-ajax/'>Javascript/Ajax</a> > </li>
+
+					</ol>
+					<article class="article main-article">
+						<header>
+							<h1>警惕AJAX应用开发中的轻罪和死罪</h1>
+							<ul class="details">
+								<li>Posted:2010-04-07 09:36</li>
+								<li><a>Film</a></li>
+								<li>By <a href="#"></a></li>
+							</ul>
+						</header>
+						<div class="main">
+							<!-- /info -->
+
+							<div class="featured">
+								<figure>
+									<!-- <img src="images/news/img01.jpg"> -->
+									<figcaption><p>AJAX bandwagon是个好去处。它能为您提供更快捷高效，动态更强的应用。但是它也有自己的缺陷。</p>
+											</figcaption>
+								</figure>
+							</div>
+
+							<p>　　AJAX bandwagon是个好去处。它能为您提供更快捷高效，动态更强的应用。但是它也有自己的缺陷。&nbsp; </p><p>　　乍看之下，具备一些常识似乎就能够避免这些缺陷，在某种程度上来看，的确如此。但是从AJAX 应用的DHTML起源来看，AJAX应用中充满了结构性的差异。无论您在应用开发工作中掌握了多少常识，学习前人的教训都是有好处的。我们将这些错误称为我们的“七宗死罪”，但是这些错误并不能代表全部的错误。 </p><p>　　事实上，在您犯下任何一宗死罪之前，您都可能首先犯了一些较为轻微的错误。因此，我们首先从这里着手。以下是每个人都可能会犯的一些错误，这些错误是如此常见，只要用Google搜索一下，就能找到大不部分的错误。 </p><p>　　七宗轻罪 </p><p>　　1.滥用后退键-这是每个人都会犯的错误。后退键在很多种Web应用中已然成为用户的期望。很多AJAX开发新手在开发AJAX应用时，出于多种原因都会使用后退键。首先，JavaScript对于它来说不是最友好的语言；其次，AJAX 设计需要一种全新的思考分析。 </p><p>　　对于AJAX新手来说很难接受“后退”不是最好选择的思路。“后退”是更新页面时，或是在特定情况下进行“撤消”时才需要的功能。在您进行编码时就要认识到，否则您最后可能会重复做功。 </p><p>　　2.忘记告诉用户当前发生的状况-AJAX的工作原理中一部分就是它不使用通常的网页用户界面加载程序。因此，您需要设计一些可视的提示，使用户能够了解正在发生的状况。 </p><p>　　3.忘记链接-这也是标准的AJAX错误：漏做了外部用户能够剪切和粘贴的URL链接。我们都曾经复制过某个ＵＲＬ链接然后将其发送给别人。在我们使用AJAX时，只有采用纯手工输入的方式才能把链接提供给他人。为什么？因为在AJAX应用中，服务器不提供在JavaScript自动生成的这个页面。不要忽视您的用户可能感兴趣的这项在网络应用中最为常见的功能。请花点时间为用户提供URL地址，因为服务器并不提供。 </p><p>　　4.用内容控制替代页面控制-如果您在寻求动态的内容控制，那么AJAX应用对传统的客户端服务器交互方式的突破对您来说可算一份大礼。但是，这样同时也会招来祸端：在重写页面上某精确位置上的内容以调整用户的交互体验时的确能够进行很好的控制，但是这可能将使您的页面不再完整。 </p><p>　　在很多情况下，我们专注于处理页面的某个部分，会忘记服务器不会刷新页面。这样可能导致页面零乱，使用户体验降低：当他们查看页面时看的可能是过时的页面。请关注整个页面；确保任何出现动态内容的页面都得到更新。 </p><p>　　5.累死蜘蛛-AJAX的优势在于无需重装就可以提供给页面的大量文本；AJAX的缺陷也在于那些无需重装就可以提供给页面的大量文本。如果应用被设计为对搜索引擎友好，那么您应该能够想到会出现什么状况。无论页面中出现了什么情况，请务必在最上面植入大量稳定的文本，让蜘蛛们去玩吧。 </p><p>　　6.导致乱码文本-AJAX不能支持多种字符集。这并不是什么涉及生死的局限性，但是如果忘记这点可能会导致真正的问题发生。最基本的字符集是UTF-8。无论JavaScript发送的是什么字符集，请不要忘了正确编码，并根据内容设置服务器端的字符集。　　 </p><p>　　7.没有为使用不支持JavaScript的浏览器的用户提供提示。有些浏览器不支持JavaScript，这些用户一时不能明白出了什么状况。请给他们一些提示。 </p><p>　　以上都是一些很容易发现的错误。真正的问题都是容易被人忽视的。　　 </p><p>　　AJAX七宗死罪 </p><p>　　1.造成内存泄露-任何长期从事开发工作的人都知道什么是循环引用，并了解循环引用给内存管理带来的危害。AJAX 所使用的JavaScript是一种内存管理语言。也就是说JavaScript具有内置的信息包收集功能，因此能够抽取不再有引用路径使用的变量并重新分配这些变量所使用的内存。 </p><p>　　作为基本工作原理来说，这样并无不妥；但是在模型层对象与查看元素之间互相引用时，由于这些循环引用，您就不能依靠这个功能来实现内存使用的最优化。从原则上来说，对象为零，则元素为零。但是如果这是从元素到对象的向后引用，那么信息包搜集器不会动这些对象。 </p><p>　　现在，问题出来了：在文件对象模型中，任何文件树中的DOM节点都可能被树中存在的其他元素引用，而无论其是否被其他对象所引用！因此，任何在信息包收集器中经过标注的被ＤＯＭ节点向后引用的对象在这一方向上都必须为零，否则它的内存就会一直处于已分配状态。 </p><p>　　2.不了解“异步”的含义-异步这个词很容易让不熟悉它的用户感到紧张。但是如果您为这些用户所设计的网页应用属于桌面应用，那么他们肯定不会感到不安。这是一个致关重要的设计点。大部分网页应用功能与桌面副本非常类似。但是在网页应用中，用户期望这种虚幻的特征导致他们截然不同。 </p><p>　　用户在与网页浏览器打交道时会带有非常不同的偏见和期望，而对于桌面应用中他们并没有这样的行为。因此，尽管页面与服务器之间频繁的响应会非常好，非常高效，页面能够同时对自身进行修订，但是这将会使用户头晕眼花。因此，您需要遵守两条守则，要考虑到进入用户视觉范围内的每个变化：如果对于用户来说不是很迫切的更新，那么要使升级更为温和，不会转移；如果更新对于用户与应用的交互非常重要，那么更新要清楚而明显。 </p><p>　　3.使服务器变成瞎子-用户端与服务器交流的减少是一大问题，而以前并非如此。在以前，服务器端的应用了解全部情况并且能够看到全部状况：每个例外，每次重新加载，每个事件多能被看到并记录下来，当然服务器也道到底客户端是什么状况，因为服务器会记录下屏幕上显示的一起。 </p><p>　　在AJAX应用中可不是这样。当有事件发生时，这些事件是与服务器相互独立的，也就是说，当客户端出现问题时，服务器端并不会马上知道。在某个位置发现和记录客户端发生的事件以及例外，使服务器能够追踪需要干涉的问题 </p><p>　　4.用GET偷懒-GET的作用是找回数据；POST的作用是对ＧＥＴ进行设置。不要在不适当的时候使用GET,即使你认为这样做没有危害也不要尝试。GET的动作会改变状态，会改变状态的链接会使用户感到困惑；大部分都认为链接的作用是导航，而不是功能。 </p><p>　　5.数据类型不兼容-JavaScript并非.NET 框架中的一部分。尽管这有点让人伤心，但是它的确为我们展示了一个我们可能会碰到的问题：确认JavaScript能够理解其运行平台上的数据类型，反之，对于.NET或其它也是如此。可能会有多种转换，您需要一一进行。例如，Ajax　.NET Pro 资料库提供能够转换.NET和JavaScript对象符号的转换器。 </p><p>　　6.有些应用不知何时应该关闭-无需刷新页面的内容动态生成如果没有关闭时间将会非常糟糕。How many Web pages hav你见过多少比美国国会议事录还长的网页？如果网页无限延长无疑会是用户的噩梦，只要想想用户会怎么看待永不停止的应用就知道了。让您的网络应用具有动态，但是一定要在可行的限度之内。 </p><p>　　7.JavaScript和DOM相互独立-请记住AJAX是建立在“模型－视觉－控制器”（Model-View-Controller）结构之上，请认真对待这点。JavaScript属于模型层，DOM属于视觉层，而控制器是衔接他们的婚姻顾问。请确保您的网络文件独立于JavaScript之外(这样对于不支持JavaScript的用户比较有用) – 除非内容自身只在用户使用JavaScript才有意义。在这种情况下，用JavaScript来创建内容。 <br /></p>
+            <p align="center"> </p>
+							<!-- <blockquote>
+									Free Responsive HTML5 &amp; CSS3 Magazine Template
+								</blockquote>
+								<p>Ut est elit, vehicula tempus volutpat ut, sodales eget odio. Nunc placerat, orci ac iaculis feugiat, sem tellus efficitur tortor, mollis iaculis lacus ante nec risus. Sed consequat vehicula pretium.</p> -->
+						</div>
+						<footer>
+							<div class="col">
+								<ul class="tags">
+									
+									
+								</ul>
+							</div>
+							<div class="col">
+								<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+									<div>1220</div>
+								</a>
+								<a href="/dedecms/plus/stow.php?aid=47" target="_blank">收藏</a>
+     							<a href="/dedecms/plus/erraddsave.php?aid=47&title=警惕AJAX应用开发中的轻罪和死罪" target="_blank">挑错</a>
+     							<a href="/dedecms/plus/recommend.php?aid=47" target="_blank">推荐</a>
+     							<a href="#" onClick="window.print();">打印</a>
+							</div>
+						</footer>
+					</article>
+					<!-- <div class="sharing">
+						<div class="title"><i class="ion-android-share-alt"></i> Sharing is caring</div>
+						<ul class="social">
+							<li>
+								<a href="#" class="facebook">
+									<i class="ion-social-facebook"></i> Facebook
+								</a>
+							</li>
+							<li>
+								<a href="#" class="twitter">
+									<i class="ion-social-twitter"></i> Twitter
+								</a>
+							</li>
+							<li>
+								<a href="#" class="googleplus">
+									<i class="ion-social-googleplus"></i> Google+
+								</a>
+							</li>
+							<li>
+								<a href="#" class="linkedin">
+									<i class="ion-social-linkedin"></i> Linkedin
+								</a>
+							</li>
+							<li>
+								<a href="#" class="skype">
+									<i class="ion-ios-email-outline"></i> Email
+								</a>
+							</li>
+							<li class="count">
+								20
+								<div>Shares</div>
+							</li>
+						</ul>
+					</div> -->
+					<div class="line">
+						<div>作者</div>
+					</div>
+					
+					<div class="line">
+						<div>你可能喜欢</div>
+					</div>
+					<div class="row">
+						<article class="article related col-md-6 col-sm-6 col-xs-12">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/35.html">
+										<img src="/dedecms/images/defaultpic.gif">
+									</a>
+								</figure>
+								<div class="padding">
+									<h2><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/35.html">用JavaScript的日期对象操控时间和日</a></h2>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/webbase/javascript-ajax/'>Javascript/Ajax</a>">Javascript/Ajax</a></div>
+										<div class="time">2010-04-07</div>
+									</div>
+								</div>
+							</div>
+						</article>
+<article class="article related col-md-6 col-sm-6 col-xs-12">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/43.html">
+										<img src="/dedecms/images/defaultpic.gif">
+									</a>
+								</figure>
+								<div class="padding">
+									<h2><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/43.html">JavaScript的9个陷阱及评点</a></h2>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/webbase/javascript-ajax/'>Javascript/Ajax</a>">Javascript/Ajax</a></div>
+										<div class="time">2010-04-07</div>
+									</div>
+								</div>
+							</div>
+						</article>
+<article class="article related col-md-6 col-sm-6 col-xs-12">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/52.html">
+										<img src="/dedecms/images/defaultpic.gif">
+									</a>
+								</figure>
+								<div class="padding">
+									<h2><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/52.html">完全了解AJAX</a></h2>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/webbase/javascript-ajax/'>Javascript/Ajax</a>">Javascript/Ajax</a></div>
+										<div class="time">2010-04-07</div>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						
+					</div>
+					<div class="line thin"></div>
+					<div class="comments">
+						<h2 class="title">3 Responses <a href="#">Write a Response</a></h2>
+						<div class="comment-list">
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+								<div class="reply-list">
+									<div class="item">
+										<div class="user">
+											<figure>
+												<img src="images/img01.jpg">
+											</figure>
+											<div class="details">
+												<h5 class="name">Mark Otto</h5>
+												<div class="time">24 Hours</div>
+												<div class="description">
+													Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+													commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+													esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+													cupidatat non
+													proident, sunt in culpa qui officia deserunt mollit anim id est
+													laborum.
+												</div>
+												<footer>
+													<a href="#">Reply</a>
+												</footer>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+							</div>
+						</div>
+						<form class="row">
+							<div class="col-md-12">
+								<h3 class="title">Leave Your Response</h3>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="name">Name <span class="required"></span></label>
+								<input type="text" id="name" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="email">Email <span class="required"></span></label>
+								<input type="email" id="email" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="website">Website</label>
+								<input type="url" id="website" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-12">
+								<label for="message">Response <span class="required"></span></label>
+								<textarea class="form-control" name="message"
+									placeholder="Write your response ..."></textarea>
+							</div>
+							<div class="form-group col-md-12">
+								<button class="btn btn-primary">Send Response</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-4 sidebar" id="sidebar">
+					<!-- <aside>
+							<div class="aside-body">
+								<figure class="ads">
+									<img src="images/ad.png">
+									<figcaption>Advertisement</figcaption>
+								</figure>
+							</div>
+						</aside> -->
+					<aside>
+						<h1 class="aside-title">最新文章</h1>
+						<div class="aside-body">
+							<article class="article-fw">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/53.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="用Mozilla免费调试器调试">
+										</a>
+									</figure>
+									<div class="details">
+										<div class="detail">
+											<div class="time">2010-04-07</div>
+											<div class="category"><a href="<a href='/dedecms/a/webbase/javascript-ajax/'>Javascript/Ajax</a>">Javascript/Ajax</a>
+											</div>
+										</div>
+										<h1><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/53.html">用Mozilla免费调试器调试</a></h1>
+										<p>
+											
+										</p>
+									</div>
+								</div>
+							</article>
+
+							<div class="line"></div>
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/50.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="如何用JavaScript实现旋转木">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/50.html">如何用JavaScript实现旋转木</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/51.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="设计与应用JavaScript对象符">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/51.html">设计与应用JavaScript对象符</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/52.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="完全了解AJAX">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/52.html">完全了解AJAX</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+
+						</div>
+					</aside>
+					<aside>
+						<div class="aside-body">
+							<form class="newsletter">
+								<div class="icon">
+									<i class="ion-ios-email-outline"></i>
+									<h1>Newsletter</h1>
+								</div>
+								<div class="input-group">
+									<input type="email" class="form-control email" placeholder="Your mail">
+									<div class="input-group-btn">
+										<button class="btn btn-primary"><i class="ion-paper-airplane"></i></button>
+									</div>
+								</div>
+								<p>By subscribing you will receive new articles in your email.</p>
+							</form>
+						</div>
+					</aside>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+		<!-- Start footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">气象海洋</h1>
+						<div class="block-body">
+							<figure class="foot-logo">
+								<img src="images/logo-light.png" class="img-responsive" alt="Logo">
+							</figure>
+							<p class="brand-description">
+								Magz is a HTML5 &amp; CSS3 magazine template based on Bootstrap 3.
+							</p>
+							<a href="page.html" class="btn btn-magz white">About Us <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">友情链接 <div class="right"><a href="#">更多 <i
+										class="ion-ios-arrow-thin-right"></i></a></div>
+						</h1>
+						<div class="block-body">
+							<ul class="tags">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">新闻</h1>
+						<div class="block-body">
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img12.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">Donec consequat lorem quis augue pharetra</a></h1>
+									</div>
+								</div>
+							</article>
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img14.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">eu dapibus risus aliquam etiam ut venenatis</a></h1>
+									</div>
+								</div>
+							</article>
+
+							<a href="#" class="btn btn-magz white btn-block">更多 <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-12 col-sm-6">
+					<div class="block">
+						<h1 class="block-title">联系我们</h1>
+						<div class="block-body">
+							<p>Follow us and stay in touch to get the latest news</p>
+							<ul class="social trp">
+								<li>
+									<a href="#" class="facebook">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="twitter">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-twitter-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="youtube">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-youtube-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="googleplus">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-googleplus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="instagram">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-instagram-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tumblr">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-tumblr"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dribbble">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-dribbble"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="linkedin">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="skype">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-skype"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="rss">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-rss"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="block">
+						<div class="block-body no-margin">
+							<ul class="footer-nav-horizontal">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Partner</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="page.html">About</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="copyright">
+						COPYRIGHT &copy; 气象海洋 2020. ALL RIGHT RESERVED. <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- JS -->
+	<script src="/dedecms/templets/magz/js/jquery.js"></script>
+	<script src="/dedecms/templets/magz/js/jquery.migrate.js"></script>
+	<script src="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.js"></script>
+	<script>
+		var $target_end = $(".best-of-the-week");
+	</script>
+	<script src="/dedecms/templets/magz/scripts/jquery-number/jquery.number.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/easescroll/jquery.easeScroll.js"></script>
+	<script src="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/toast/jquery.toast.min.js"></script>
+	<script src="/dedecms/templets/magz/js/demo.js"></script>
+	<script src="/dedecms/templets/magz/js/e-magz.js"></script>
+</body>
+
+</html>

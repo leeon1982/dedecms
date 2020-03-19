@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Magz is a HTML5 & CSS3 magazine template is based on Bootstrap 3.">
+
+
+	<title>Magz &mdash; Responsive HTML5 &amp; CSS3 Magazine Template</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/bootstrap/bootstrap.min.css">
+	<!-- IonIcons -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/ionicons/css/ionicons.min.css">
+	<!-- Toast -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/toast/jquery.toast.min.css">
+	<!-- OwlCarousel -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/magnific-popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/sweetalert/dist/sweetalert.css">
+	<!-- Custom style -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css">
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/skins/all.css">
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/demo.css">
+</head>
+
+<body>
+	{dede:include filename="head2.htm"/}
+
+	<section class="category">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 text-left">
+					<div class="row">
+						<div class="col-md-12">
+							<ol class="breadcrumb">
+								<li><a href="#">{dede:field name='position'/}</a></li>
+							</ol>
+							<h1 class="page-title">Category: Computer</h1>
+							<p class="page-subtitle">Showing all posts with category <i>Computer</i></p>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="row">
+						{dede:list pagesize='8'}
+						<article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									[field:array runphp='yes']@me = (empty(@me['litpic']) ? "" : "<a href='{@me['arcurl']}'><img src='{@me['litpic']}'/></a>"); [/field:array]
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="[field:typelink/]">[field:typename/]</a>
+										</div>
+										<div class="time">[field:pubdate function="GetDateTimeMK(@me)"/]</div>
+									</div>
+									<h1><a href="[field:arcurl/]">[field:title/]</a>
+									</h1>
+									<p>
+										[field:description/]...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>[field:click/]</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>[field:scores/]</div>
+										</a>
+										<a class="btn btn-primary more" href="[field:arcurl/]">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article>
+						{/dede:list}
+						
+						<div class="col-md-12 text-center">
+							<ul class="pagination">
+								<li class="prev"><a href="#"><i class="ion-ios-arrow-left"></i></a></li>
+								{dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+								<li class="next"><a href="#"><i class="ion-ios-arrow-right"></i></a></li>
+							</ul>
+							<div class="pagination-help-text">
+								Showing 8 results of 776 &mdash; Page 1
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 sidebar">
+					<!-- <aside>
+						<div class="aside-body">
+							<figure class="ads">
+								<a href="single.html">
+									<img src="images/ad.png">
+								</a>
+								<figcaption>Advertisement</figcaption>
+							</figure>
+						</div>
+					</aside> -->
+					<aside>
+						<h1 class="aside-title">最新文章</h1>
+						<div class="aside-body">
+							{dede:arclist limit='0,1' orderby='pubdate'}
+							<article class="article-fw">
+								<div class="inner">
+									<figure>
+										<a href="[field:arcurl/]">
+											<img src="[field:litpic/]" alt="[field:title/]">
+										</a>
+									</figure>
+									<div class="details">
+										<div class="detail">
+											<div class="time">[field:pubdate function="MyDate('Y-m-d',@me)"/]</div>
+											<div class="category"><a href="[field:typelink/]">[field:typename/]</a>
+											</div>
+										</div>
+										<h1><a href="[field:arcurl/]">[field:title/]</a></h1>
+										<p>
+											[field:arcinfo/]
+										</p>
+									</div>
+								</div>
+							</article>
+							{/dede:arclist}
+							<div class="line"></div>
+							{dede:arclist limit='1,3' orderby='pubdate'}
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="[field:arcurl/]">
+											<img src="[field:litpic/]" alt="[field:title/]">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="[field:arcurl/]">[field:title/]</a>
+										</h1>
+										<p>[field:arcinfo/]</p>
+									</div>
+								</div>
+							</article>
+							{/dede:arclist}
+						</div>
+					</aside>
+					<aside>
+						<div class="aside-body">
+							<form class="newsletter">
+								<div class="icon">
+									<i class="ion-ios-email-outline"></i>
+									<h1>Newsletter</h1>
+								</div>
+								<div class="input-group">
+									<input type="email" class="form-control email" placeholder="Your mail">
+									<div class="input-group-btn">
+										<button class="btn btn-primary"><i class="ion-paper-airplane"></i></button>
+									</div>
+								</div>
+								<p>By subscribing you will receive new articles in your email.</p>
+							</form>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	{dede:include filename="foot.htm"/}
+
+	<!-- JS -->
+	<script src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/js/jquery.migrate.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/bootstrap/bootstrap.min.js"></script>
+	<script>
+		var $target_end = $(".best-of-the-week");
+	</script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/jquery-number/jquery.number.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/easescroll/jquery.easeScroll.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/toast/jquery.toast.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/js/demo.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/js/e-magz.js"></script>
+</body>
+
+</html>

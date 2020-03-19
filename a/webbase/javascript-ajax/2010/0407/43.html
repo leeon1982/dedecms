@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Magz is a HTML5 & CSS3 magazine template is based on Bootstrap 3.">
+
+
+	<title>Magz &mdash; Responsive HTML5 &amp; CSS3 Magazine Template</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.css">
+	<!-- IonIcons -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/ionicons/css/ionicons.min.css">
+	<!-- Toast -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/toast/jquery.toast.min.css">
+	<!-- OwlCarousel -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/magnific-popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.css">
+	<!-- Custom style -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/style.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/skins/all.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/demo.css">
+</head>
+
+<body>
+	<header class="primary">
+  <div class="firstbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="brand">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Magz Logo">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <form class="search" autocomplete="off">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Type something here">
+                <div class="input-group-btn">
+                  <button class="btn btn-primary"><i class="ion-search"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="help-block">
+              <div>热门:</div>
+              <ul>
+                
+                <li><a href='/dedecms/tags.php?/%E5%B8%83%E5%B1%80/'>布局</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E6%88%91%E4%BB%AC/'>我们</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Ajax/'>Ajax</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E7%94%A8/'>用</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Dreamweaver/'>Dreamweaver</a></li>
+                
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 col-sm-12 text-right">
+          <ul class="nav-icons">
+            <li><a href="register.html"><i class="ion-person-add"></i>
+                <div>注 册</div>
+              </a></li>
+            <li><a href="login.html"><i class="ion-person"></i>
+                <div>登 录</div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start nav -->
+  <nav class="menu">
+    <div class="container">
+      <div class="brand">
+        <a href="#">
+          <img src="images/logo.png" alt="Magz Logo">
+        </a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="menu" data-target="#menu-list"><i class="ion-navicon-round"></i></a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="sidebar" data-target="#sidebar"><i class="ion-ios-arrow-left"></i></a>
+      </div>
+      <div id="menu-list">
+        <ul class="nav-list">
+          <li class="for-tablet nav-title"><a>Menu</a></li>
+          <li class="for-tablet"><a href="login.html">Login</a></li>
+          <li class="for-tablet"><a href="register.html">Register</a></li>
+          <li><a href="/dedecms/">主页</a></li>
+          
+          <li class="dropdown magz-dropdown magz-dropdown-megamenu"><a href="#">网上公开 <i
+            class="ion-ios-arrow-right"></i>
+          <div class="badge">Hot</div>
+
+          <div class="dropdown-menu megamenu">
+            <div class="megamenu-inner">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="megamenu-title">测试功能</h2>
+                    </div>
+                  </div>
+                  <ul class="vertical-menu">
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="megamenu-title">网上信箱</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="队长信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">队长信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="政委信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">政委信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="纪委信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">政委信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </li>
+          <li class="dropdown magz-dropdown"><a href="#">Dropdown Icons <i class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="icon ion-person"></i> My Account</a></li>
+              <li><a href="#"><i class="icon ion-heart"></i> Favorite</a></li>
+              <li><a href="#"><i class="icon ion-chatbox"></i> Comments</a></li>
+              <li><a href="#"><i class="icon ion-key"></i> Change Password</a></li>
+              <li><a href="#"><i class="icon ion-settings"></i> Settings</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon ion-log-out"></i> Logout</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End nav -->
+</header>
+
+	<section class="single">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<ol class="breadcrumb">
+						<li><a href='http://localhost/dedecms'>主页</a> > <a href='/dedecms/a/webbase/'>网页基础</a> > <a href='/dedecms/a/webbase/javascript-ajax/'>Javascript/Ajax</a> > </li>
+
+					</ol>
+					<article class="article main-article">
+						<header>
+							<h1>JavaScript的9个陷阱及评点</h1>
+							<ul class="details">
+								<li>Posted:2010-04-07 09:36</li>
+								<li><a>Film</a></li>
+								<li>By <a href="#"></a></li>
+							</ul>
+						</header>
+						<div class="main">
+							<!-- /info -->
+
+							<div class="featured">
+								<figure>
+									<!-- <img src="images/news/img01.jpg"> -->
+									<figcaption><p>来自Nine Javascript Gotchas, 以下是JavaScript容易犯错的九个陷阱。虽然不是什么很高深的技术问题，但注意一下，会使您的编程轻松些，即所谓make life easier. 笔者对某些陷阱会混杂一些评点。</p>
+											</figcaption>
+								</figure>
+							</div>
+
+							<p>来自, 以下是JavaScript容易犯错的九个陷阱。虽然不是什么很高深的技术问题，但注意一下，会使您的编程轻松些，即所谓make life easier. 笔者对某些陷阱会混杂一些评点。</p><ol><li><h2>最后一个逗号</h2><p>如这段代码，注意最后一个逗号，按语言学角度来说应该是不错的（python的类似数据类型辞典dictionary就允许如此）。IE会报语法错误，但语焉不详，你只能用人眼从几千行代码中扫描。</p><pre><code><script>
+  var theObj = {
+        city : "Boston",
+        state : "MA",
+  }
+</script> </code></pre></li><li><h2><span><font face="NSimsun">this</font></span>的引用会改变</h2><p>如这段代码：</p><pre><code><input type="button" value="Gotcha!" id="MyButton" >
+<script>
+var MyObject = function () {
+    this.alertMessage = "Javascript rules";
+    this.ClickHandler = function() {
+        <strong style="COLOR: red">alert(this.alertMessage );</strong>
+  }
+}();
+document.getElementById(”theText”).onclick =  MyObject.ClickHandler
+</script></code></pre><p>并不如你所愿，答案并不是”JavaScript rules”。在执行<span><font face="NSimsun">MyObject.ClickHandler</font></span>时，代码中红色这行，<span><font face="NSimsun">this</font></span>的引用实际上指向的是<span><font face="NSimsun">document.getElementById("theText")</font></span>的引用。可以这么解决：</p><pre><code><input type="button" value="Gotcha!" id="theText" >
+<script>
+var MyObject = function () {
+    <strong style="COLOR: red">var self = this;</strong></span />
+    this.alertMessage = “Javascript rules”;
+    this.OnClick = function() {
+        alert(self.value);
+    }
+}();
+document.getElementById(”theText”).onclick =  MyObject.OnClick
+</script></code></pre><p>实质上，这就是。如果你看过，你会发现解决方案不止一种。</p></li><li><h2>标识盗贼</h2><p>在JavaScript中不要使用跟HTML的id一样的变量名。如下代码：</p><pre><code><input type="button" id="TheButton">
+<script>
+    TheButton = get("TheButton");
+</script></code></pre><p>IE会报对象未定义的错误。我只能说：IE sucks.</p></li><li><h2>字符串只替换第一个匹配</h2><p>如下代码：</p><pre><code><script>
+    var fileName = "This is a title".replace(" ","_");
+</script></code></pre><p>而实际上，结果是”<span><font face="NSimsun">This_is a title</font></span>“. 在JavaScript中，<span><font face="NSimsun">String.replace</font></span>的第一个参数应该是正则表达式。所以，正确的做法是这样：</p><pre><code>var fileName = "This is a title".replace(/ /g,"_");</code></pre></li><li><h2>mouseout意味着mousein</h2><p>事实上，这是由于事件冒泡导致的。IE中有<span><font face="NSimsun">mouseenter</font></span>和<span><font face="NSimsun">mouseleave</font></span>，但不是标准的。作者在此建议大家使用库比如YUI来解决问题。</p></li><li><h2><span><font face="NSimsun">parseInt</font></span>是基于进制体系的</h2><p>这个是常识，可是很多人给忽略了<span><font face="NSimsun">parseInt</font></span>还有第二个参数，用以指明进制。比如，<span><font face="NSimsun">parseInt("09")</font></span>，如果你认为答案是9，那就错了。因为，在此，字符串以0开头，<span><font face="NSimsun">parseInt</font></span>以八进制来处理它，在八进制中，<span><font face="NSimsun">09</font></span>是非法，返回<span><font face="NSimsun">false</font></span>，布尔值<span><font face="NSimsun">false</font></span>转化成数值就是0. 因此，正确的做法是<span><font face="NSimsun">parseInt("09", 10)</font></span>. </p></li><li><h2><span><font face="NSimsun">for...in...</font></span>会遍历所有的东西</h2><p>有一段这样的代码：</p><pre><code>var arr = [5,10,15]
+var total = 1;
+for ( var x in arr) {
+    total = total * arr[x];
+}</code></pre><p>运行得好好的，不是吗？但是有一天它不干了，给我返回的值变成了<span><font face="NSimsun">NaN</font></span>, 晕。我只不过引入了一个库而已啊。原来是这个库改写了<span><font face="NSimsun">Array</font></span>的<span><font face="NSimsun">prototype</font></span>，这样，我们的<span><font face="NSimsun">arr</font></span>平白无过多出了一个属性（方法），而<span><font face="NSimsun">for...in...</font></span>会把它给遍历出来。所以这样做才是比较安全的：</p><pre><code>for ( var x = 0; x < arr.length; x++) {
+    total = total * arr[x];
+}</code></pre><p>其实，这也是污染基本类的<span><font face="NSimsun">prototype</font></span>会带来危害的一个例证。</p></li><li><h2>事件处理器的陷阱</h2><p>这其实只会存在使用作为对象属性的事件处理器才会存在的问题。比如<font face="NSimsun"><span>window.onclick = MyOnClickMethod</span><span>这样的代码，这会复写掉之前的</span><span>window.onclick</span></font>事件，还可能导致IE的内容泄露（sucks again）。在IE还没有支持DOM 2的事件注册之前，作者建议使用库来解决问题，比如使用YUI:</p><pre><code>YAHOO.util.Event.addListener(window, "click", MyOnClickMethod);</code></pre><p>这应该也属于常识问题，但新手可能容易犯错。</p></li><li><h2>Focus Pocus</h2><p>新建一个<span><font face="NSimsun">input</font></span>文本元素，然后把焦点挪到它上面，按理说，这样的代码应该很自然：</p><pre><code>var newInput = document.createElement("input");
+document.body.appendChild(newInput);
+newInput.focus();
+newInput.select();</code></pre><p>但是IE会报错（sucks again and again）。理由可能是当你执行<span><font face="NSimsun">fouce()</font></span>的时候，元素尚未可用。因此，我们可以延迟执行：</p><pre><code>var newInput = document.createElement("input");
+newInput.id = "TheNewInput";
+document.body.appendChild(newInput);
+setTimeout(function(){ //这里我使用闭包改写过，若有兴趣可以对比原文
+	document.getElementById('TheNewInput').focus();
+	document.getElementById('TheNewInput').select();}, 10);</code></pre></li></ol><p>在实践中，JavaScript的陷阱还有很多很多，大多是由于解析器的实现不到位而引起。这些东西一般都不会在教科书中出现，只能靠开发者之间的经验分享。谢天谢地，我们生活在网络时代，很多碰到的问题，一般都可以在Google中找到答案。 </p><p>来源:</p>
+            <p align="center"> </p>
+							<!-- <blockquote>
+									Free Responsive HTML5 &amp; CSS3 Magazine Template
+								</blockquote>
+								<p>Ut est elit, vehicula tempus volutpat ut, sodales eget odio. Nunc placerat, orci ac iaculis feugiat, sem tellus efficitur tortor, mollis iaculis lacus ante nec risus. Sed consequat vehicula pretium.</p> -->
+						</div>
+						<footer>
+							<div class="col">
+								<ul class="tags">
+									
+									
+								</ul>
+							</div>
+							<div class="col">
+								<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+									<div>1220</div>
+								</a>
+								<a href="/dedecms/plus/stow.php?aid=43" target="_blank">收藏</a>
+     							<a href="/dedecms/plus/erraddsave.php?aid=43&title=JavaScript的9个陷阱及评点" target="_blank">挑错</a>
+     							<a href="/dedecms/plus/recommend.php?aid=43" target="_blank">推荐</a>
+     							<a href="#" onClick="window.print();">打印</a>
+							</div>
+						</footer>
+					</article>
+					<!-- <div class="sharing">
+						<div class="title"><i class="ion-android-share-alt"></i> Sharing is caring</div>
+						<ul class="social">
+							<li>
+								<a href="#" class="facebook">
+									<i class="ion-social-facebook"></i> Facebook
+								</a>
+							</li>
+							<li>
+								<a href="#" class="twitter">
+									<i class="ion-social-twitter"></i> Twitter
+								</a>
+							</li>
+							<li>
+								<a href="#" class="googleplus">
+									<i class="ion-social-googleplus"></i> Google+
+								</a>
+							</li>
+							<li>
+								<a href="#" class="linkedin">
+									<i class="ion-social-linkedin"></i> Linkedin
+								</a>
+							</li>
+							<li>
+								<a href="#" class="skype">
+									<i class="ion-ios-email-outline"></i> Email
+								</a>
+							</li>
+							<li class="count">
+								20
+								<div>Shares</div>
+							</li>
+						</ul>
+					</div> -->
+					<div class="line">
+						<div>作者</div>
+					</div>
+					
+					<div class="line">
+						<div>你可能喜欢</div>
+					</div>
+					<div class="row">
+						<article class="article related col-md-6 col-sm-6 col-xs-12">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/35.html">
+										<img src="/dedecms/images/defaultpic.gif">
+									</a>
+								</figure>
+								<div class="padding">
+									<h2><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/35.html">用JavaScript的日期对象操控时间和日</a></h2>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/webbase/javascript-ajax/'>Javascript/Ajax</a>">Javascript/Ajax</a></div>
+										<div class="time">2010-04-07</div>
+									</div>
+								</div>
+							</div>
+						</article>
+<article class="article related col-md-6 col-sm-6 col-xs-12">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/43.html">
+										<img src="/dedecms/images/defaultpic.gif">
+									</a>
+								</figure>
+								<div class="padding">
+									<h2><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/43.html">JavaScript的9个陷阱及评点</a></h2>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/webbase/javascript-ajax/'>Javascript/Ajax</a>">Javascript/Ajax</a></div>
+										<div class="time">2010-04-07</div>
+									</div>
+								</div>
+							</div>
+						</article>
+<article class="article related col-md-6 col-sm-6 col-xs-12">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/52.html">
+										<img src="/dedecms/images/defaultpic.gif">
+									</a>
+								</figure>
+								<div class="padding">
+									<h2><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/52.html">完全了解AJAX</a></h2>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/webbase/javascript-ajax/'>Javascript/Ajax</a>">Javascript/Ajax</a></div>
+										<div class="time">2010-04-07</div>
+									</div>
+								</div>
+							</div>
+						</article>
+
+						
+					</div>
+					<div class="line thin"></div>
+					<div class="comments">
+						<h2 class="title">3 Responses <a href="#">Write a Response</a></h2>
+						<div class="comment-list">
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+								<div class="reply-list">
+									<div class="item">
+										<div class="user">
+											<figure>
+												<img src="images/img01.jpg">
+											</figure>
+											<div class="details">
+												<h5 class="name">Mark Otto</h5>
+												<div class="time">24 Hours</div>
+												<div class="description">
+													Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+													commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+													esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+													cupidatat non
+													proident, sunt in culpa qui officia deserunt mollit anim id est
+													laborum.
+												</div>
+												<footer>
+													<a href="#">Reply</a>
+												</footer>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+							</div>
+						</div>
+						<form class="row">
+							<div class="col-md-12">
+								<h3 class="title">Leave Your Response</h3>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="name">Name <span class="required"></span></label>
+								<input type="text" id="name" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="email">Email <span class="required"></span></label>
+								<input type="email" id="email" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="website">Website</label>
+								<input type="url" id="website" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-12">
+								<label for="message">Response <span class="required"></span></label>
+								<textarea class="form-control" name="message"
+									placeholder="Write your response ..."></textarea>
+							</div>
+							<div class="form-group col-md-12">
+								<button class="btn btn-primary">Send Response</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-4 sidebar" id="sidebar">
+					<!-- <aside>
+							<div class="aside-body">
+								<figure class="ads">
+									<img src="images/ad.png">
+									<figcaption>Advertisement</figcaption>
+								</figure>
+							</div>
+						</aside> -->
+					<aside>
+						<h1 class="aside-title">最新文章</h1>
+						<div class="aside-body">
+							<article class="article-fw">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/53.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="用Mozilla免费调试器调试">
+										</a>
+									</figure>
+									<div class="details">
+										<div class="detail">
+											<div class="time">2010-04-07</div>
+											<div class="category"><a href="<a href='/dedecms/a/webbase/javascript-ajax/'>Javascript/Ajax</a>">Javascript/Ajax</a>
+											</div>
+										</div>
+										<h1><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/53.html">用Mozilla免费调试器调试</a></h1>
+										<p>
+											
+										</p>
+									</div>
+								</div>
+							</article>
+
+							<div class="line"></div>
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/50.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="如何用JavaScript实现旋转木">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/50.html">如何用JavaScript实现旋转木</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/51.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="设计与应用JavaScript对象符">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/51.html">设计与应用JavaScript对象符</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/52.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="完全了解AJAX">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/52.html">完全了解AJAX</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+
+						</div>
+					</aside>
+					<aside>
+						<div class="aside-body">
+							<form class="newsletter">
+								<div class="icon">
+									<i class="ion-ios-email-outline"></i>
+									<h1>Newsletter</h1>
+								</div>
+								<div class="input-group">
+									<input type="email" class="form-control email" placeholder="Your mail">
+									<div class="input-group-btn">
+										<button class="btn btn-primary"><i class="ion-paper-airplane"></i></button>
+									</div>
+								</div>
+								<p>By subscribing you will receive new articles in your email.</p>
+							</form>
+						</div>
+					</aside>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+		<!-- Start footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">气象海洋</h1>
+						<div class="block-body">
+							<figure class="foot-logo">
+								<img src="images/logo-light.png" class="img-responsive" alt="Logo">
+							</figure>
+							<p class="brand-description">
+								Magz is a HTML5 &amp; CSS3 magazine template based on Bootstrap 3.
+							</p>
+							<a href="page.html" class="btn btn-magz white">About Us <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">友情链接 <div class="right"><a href="#">更多 <i
+										class="ion-ios-arrow-thin-right"></i></a></div>
+						</h1>
+						<div class="block-body">
+							<ul class="tags">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">新闻</h1>
+						<div class="block-body">
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img12.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">Donec consequat lorem quis augue pharetra</a></h1>
+									</div>
+								</div>
+							</article>
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img14.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">eu dapibus risus aliquam etiam ut venenatis</a></h1>
+									</div>
+								</div>
+							</article>
+
+							<a href="#" class="btn btn-magz white btn-block">更多 <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-12 col-sm-6">
+					<div class="block">
+						<h1 class="block-title">联系我们</h1>
+						<div class="block-body">
+							<p>Follow us and stay in touch to get the latest news</p>
+							<ul class="social trp">
+								<li>
+									<a href="#" class="facebook">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="twitter">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-twitter-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="youtube">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-youtube-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="googleplus">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-googleplus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="instagram">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-instagram-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tumblr">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-tumblr"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dribbble">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-dribbble"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="linkedin">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="skype">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-skype"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="rss">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-rss"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="block">
+						<div class="block-body no-margin">
+							<ul class="footer-nav-horizontal">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Partner</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="page.html">About</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="copyright">
+						COPYRIGHT &copy; 气象海洋 2020. ALL RIGHT RESERVED. <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- JS -->
+	<script src="/dedecms/templets/magz/js/jquery.js"></script>
+	<script src="/dedecms/templets/magz/js/jquery.migrate.js"></script>
+	<script src="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.js"></script>
+	<script>
+		var $target_end = $(".best-of-the-week");
+	</script>
+	<script src="/dedecms/templets/magz/scripts/jquery-number/jquery.number.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/easescroll/jquery.easeScroll.js"></script>
+	<script src="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/toast/jquery.toast.min.js"></script>
+	<script src="/dedecms/templets/magz/js/demo.js"></script>
+	<script src="/dedecms/templets/magz/js/e-magz.js"></script>
+</body>
+
+</html>

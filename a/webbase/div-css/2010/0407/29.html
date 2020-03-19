@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Magz is a HTML5 & CSS3 magazine template is based on Bootstrap 3.">
+
+
+	<title>Magz &mdash; Responsive HTML5 &amp; CSS3 Magazine Template</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.css">
+	<!-- IonIcons -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/ionicons/css/ionicons.min.css">
+	<!-- Toast -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/toast/jquery.toast.min.css">
+	<!-- OwlCarousel -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/magnific-popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.css">
+	<!-- Custom style -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/style.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/skins/all.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/demo.css">
+</head>
+
+<body>
+	<header class="primary">
+  <div class="firstbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="brand">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Magz Logo">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <form class="search" autocomplete="off">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Type something here">
+                <div class="input-group-btn">
+                  <button class="btn btn-primary"><i class="ion-search"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="help-block">
+              <div>热门:</div>
+              <ul>
+                
+                <li><a href='/dedecms/tags.php?/%E5%B8%83%E5%B1%80/'>布局</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E6%88%91%E4%BB%AC/'>我们</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Ajax/'>Ajax</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E7%94%A8/'>用</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Dreamweaver/'>Dreamweaver</a></li>
+                
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 col-sm-12 text-right">
+          <ul class="nav-icons">
+            <li><a href="register.html"><i class="ion-person-add"></i>
+                <div>注 册</div>
+              </a></li>
+            <li><a href="login.html"><i class="ion-person"></i>
+                <div>登 录</div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start nav -->
+  <nav class="menu">
+    <div class="container">
+      <div class="brand">
+        <a href="#">
+          <img src="images/logo.png" alt="Magz Logo">
+        </a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="menu" data-target="#menu-list"><i class="ion-navicon-round"></i></a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="sidebar" data-target="#sidebar"><i class="ion-ios-arrow-left"></i></a>
+      </div>
+      <div id="menu-list">
+        <ul class="nav-list">
+          <li class="for-tablet nav-title"><a>Menu</a></li>
+          <li class="for-tablet"><a href="login.html">Login</a></li>
+          <li class="for-tablet"><a href="register.html">Register</a></li>
+          <li><a href="/dedecms/">主页</a></li>
+          
+          <li class="dropdown magz-dropdown magz-dropdown-megamenu"><a href="#">网上公开 <i
+            class="ion-ios-arrow-right"></i>
+          <div class="badge">Hot</div>
+
+          <div class="dropdown-menu megamenu">
+            <div class="megamenu-inner">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="megamenu-title">测试功能</h2>
+                    </div>
+                  </div>
+                  <ul class="vertical-menu">
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="megamenu-title">网上信箱</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="队长信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">队长信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="政委信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">政委信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="纪委信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">政委信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </li>
+          <li class="dropdown magz-dropdown"><a href="#">Dropdown Icons <i class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="icon ion-person"></i> My Account</a></li>
+              <li><a href="#"><i class="icon ion-heart"></i> Favorite</a></li>
+              <li><a href="#"><i class="icon ion-chatbox"></i> Comments</a></li>
+              <li><a href="#"><i class="icon ion-key"></i> Change Password</a></li>
+              <li><a href="#"><i class="icon ion-settings"></i> Settings</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon ion-log-out"></i> Logout</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End nav -->
+</header>
+
+	<section class="single">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<ol class="breadcrumb">
+						<li><a href='http://localhost/dedecms'>主页</a> > <a href='/dedecms/a/webbase/'>网页基础</a> > <a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a> > </li>
+
+					</ol>
+					<article class="article main-article">
+						<header>
+							<h1>简洁纯净的CSS表单设计实例</h1>
+							<ul class="details">
+								<li>Posted:2010-04-07 09:32</li>
+								<li><a>Film</a></li>
+								<li>By <a href="#"></a></li>
+							</ul>
+						</header>
+						<div class="main">
+							<!-- /info -->
+
+							<div class="featured">
+								<figure>
+									<!-- <img src="images/news/img01.jpg"> -->
+									<figcaption><p>很多CSS爱好者不喜欢HTML表格，尤其是在制作表单的时候，虽然现在已经是XHTML+CSS的年代，但表单的设计大多还在采用table来布局。那 么，有没有更好的使用纯语义化XHTML+CSS设计表单方法呢？今天让我们一起来尝试这种更符合语义化的方法来代替Table嵌套的表</p>
+											</figcaption>
+								</figure>
+							</div>
+
+							<p><img alt="" src="http://localhost/dedecms/uploads/allimg/c100407/12F60393525250-A528.png" /><br />
+很多CSS爱好者不喜欢HTML表格，尤其是在制作表单的时候，虽然现在已经是XHTML+CSS的年代，但表单的设计大多还在采用table来布局。那 么，有没有更好的使用纯语义化XHTML+CSS设计表单方法呢？今天让我们一起来尝试这种更符合语义化的方法来代替Table嵌套的表单元素吧！</p>
+<p>在这里我要说，并不是要完全摒弃table的使用，它有它的语义化布局作用，尤其是在存储数据的时候。我在大多数情况下会使用纯CSS来设计表单， 但是，我也很喜欢表格，只要我们能在正确的地方使用正确的元素就可以了，不要太过追求所谓的DIV+CSS。直接使用table要比使用CSS来”模拟” (display:table;)表格更方便更快速。下面暴风彬彬将分享一种使用纯CSS代替HTML表格元素设计表单的方法。</p>
+<p>您可以下载源代码并使用在自己的网站项目中。<br />
+</p>
+<h3>第一步:HTML代码</h3>
+<p>创建一个新页面index.html，然后拷贝并粘贴以下代码到<body>标签内。</p>
+<blockquote>
+<p><div id=”stylized” class=”myform”><br />
+&nbsp;&nbsp; &nbsp;<form id=”form” name=”form” method=”post” action=”index.html”><br />
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<h1>Sign-up form</h1><br />
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<p>This is the basic look of my form without table</p><br />
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<label>Name<br />
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span class=”small”>Add your name</span><br />
+&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</label><br />
+&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;<input type=”text” name=”name” id=”name” /><br />
+&nbsp;&nbsp; &nbsp; &nbsp; <label>Email<br />
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=”small”>Add a valid address</span><br />
+&nbsp;&nbsp; &nbsp; &nbsp; </label><br />
+&nbsp;&nbsp; &nbsp; &nbsp; <input type=”text” name=”email” id=”email” /><br />
+&nbsp;&nbsp; &nbsp; &nbsp; <label>Password<br />
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class=”small”>Min. size 6 chars</span><br />
+&nbsp;&nbsp; &nbsp; &nbsp; </label><br />
+&nbsp;&nbsp; &nbsp; &nbsp; <input type=”text” name=”password” id=”password” /><br />
+&nbsp;&nbsp; &nbsp; &nbsp; <button type=”submit”>Sign-up</button><br />
+&nbsp;&nbsp; &nbsp; &nbsp; <div class=”spacer”></div><br />
+&nbsp;&nbsp; &nbsp;</form><br />
+</div></p>
+</blockquote>
+<p>　　通过上面的代码，你是否能看出它的视觉样式呢？下面是我们的CSS表单结构图示:<br />
+<img alt="" src="http://localhost/dedecms/uploads/allimg/c100407/12F603935N10-H211.png" /><br />
+我为每个input元素使用了<label>标签，并使用<span>标签包含简短的描述。所有的label和input元素都是用了CSS的float属性，值为left。</p>
+<h3>第二步:CSS代码</h3>
+<p>复制并粘贴以下代码到你页面中的<head>标签中的<style type=”taxt/css”></style>内。(也可以单独存储到CSS文件中)</p>
+<blockquote>
+<p>body{<br />
+&nbsp;&nbsp; &nbsp;font-family:”Lucida Grande”, “Lucida Sans Unicode”, Verdana, Arial, Helvetica, sans-serif;<br />
+&nbsp;&nbsp; &nbsp;font-size:12px;<br />
+}<br />
+p, h1, form, button{border:0; margin:0; padding:0;}<br />
+.spacer{clear:both; height:1px;}<br />
+/* ———– My Form ———– */<br />
+.myform{<br />
+&nbsp;&nbsp; &nbsp;margin:0 auto;<br />
+&nbsp;&nbsp; &nbsp;width:400px;<br />
+&nbsp;&nbsp; &nbsp;padding:14px;<br />
+}<br />
+/* ———– stylized ———– */<br />
+#stylized{<br />
+&nbsp;&nbsp; &nbsp;border:solid 2px #b7ddf2;<br />
+&nbsp;&nbsp; &nbsp;background:#ebf4fb;<br />
+}<br />
+#stylized h1 {<br />
+&nbsp;&nbsp; &nbsp;font-size:14px;<br />
+&nbsp;&nbsp; &nbsp;font-weight:bold;<br />
+&nbsp;&nbsp; &nbsp;margin-bottom:8px;<br />
+}<br />
+#stylized p{<br />
+&nbsp;&nbsp; &nbsp;font-size:11px;<br />
+&nbsp;&nbsp; &nbsp;color:#666666;<br />
+&nbsp;&nbsp; &nbsp;margin-bottom:20px;<br />
+&nbsp;&nbsp; &nbsp;border-bottom:solid 1px #b7ddf2;<br />
+&nbsp;&nbsp; &nbsp;padding-bottom:10px;<br />
+}<br />
+#stylized label{<br />
+&nbsp;&nbsp; &nbsp;display:block;<br />
+&nbsp;&nbsp; &nbsp;font-weight:bold;<br />
+&nbsp;&nbsp; &nbsp;text-align:right;<br />
+&nbsp;&nbsp; &nbsp;width:140px;<br />
+&nbsp;&nbsp; &nbsp;float:left;<br />
+}<br />
+#stylized .small{<br />
+&nbsp;&nbsp; &nbsp;color:#666666;<br />
+&nbsp;&nbsp; &nbsp;display:block;<br />
+&nbsp;&nbsp; &nbsp;font-size:11px;<br />
+&nbsp;&nbsp; &nbsp;font-weight:normal;<br />
+&nbsp;&nbsp; &nbsp;text-align:right;<br />
+&nbsp;&nbsp; &nbsp;width:140px;<br />
+}<br />
+#stylized input{<br />
+&nbsp;&nbsp; &nbsp;float:left;<br />
+&nbsp;&nbsp; &nbsp;font-size:12px;<br />
+&nbsp;&nbsp; &nbsp;padding:4px 2px;<br />
+&nbsp;&nbsp; &nbsp;border:solid 1px #aacfe4;<br />
+&nbsp;&nbsp; &nbsp;width:200px;<br />
+&nbsp;&nbsp; &nbsp;margin:2px 0 20px 10px;<br />
+}<br />
+#stylized button{<br />
+&nbsp;&nbsp; &nbsp;clear:both;<br />
+&nbsp;&nbsp; &nbsp;margin-left:150px;<br />
+&nbsp;&nbsp; &nbsp;width:125px;<br />
+&nbsp;&nbsp; &nbsp;height:31px;<br />
+&nbsp;&nbsp; &nbsp;background:#666666 url(img/button.png) no-repeat;<br />
+&nbsp;&nbsp; &nbsp;text-align:center;<br />
+&nbsp;&nbsp; &nbsp;line-height:31px;<br />
+&nbsp;&nbsp; &nbsp;color:#FFFFFF;<br />
+&nbsp;&nbsp; &nbsp;font-size:11px;<br />
+&nbsp;&nbsp; &nbsp;font-weight:bold;<br />
+}</p>
+</blockquote>
+<p>以上仅仅是表单布局的一种方式，您也可以按照您的喜好来修改源代码并重新使用它。<br />
+如果您对于CSS表单布局有其它不同的或更好的建议的话，欢迎在此留下您宝贵的评论.</p>
+<p></p>
+<p>原文：<br />
+翻译：</p>
+            <p align="center"> </p>
+							<!-- <blockquote>
+									Free Responsive HTML5 &amp; CSS3 Magazine Template
+								</blockquote>
+								<p>Ut est elit, vehicula tempus volutpat ut, sodales eget odio. Nunc placerat, orci ac iaculis feugiat, sem tellus efficitur tortor, mollis iaculis lacus ante nec risus. Sed consequat vehicula pretium.</p> -->
+						</div>
+						<footer>
+							<div class="col">
+								<ul class="tags">
+									
+									<li><a href="/dedecms/tags.php?/CSS/">CSS</a></li>
+									
+									<li><a href="/dedecms/tags.php?/%E8%AE%BE%E8%AE%A1/">设计</a></li>
+									
+									<li><a href="/dedecms/tags.php?/%E5%AE%9E%E4%BE%8B/">实例</a></li>
+									
+									<li><a href="/dedecms/tags.php?/%E4%BD%BF%E7%94%A8/">使用</a></li>
+									
+									<li><a href="/dedecms/tags.php?/%E7%AE%80%E6%B4%81/">简洁</a></li>
+									
+									<li><a href="/dedecms/tags.php?/%E8%A1%A8%E5%8D%95/">表单</a></li>
+									
+									<li><a href="/dedecms/tags.php?/%23/">#</a></li>
+									
+									
+								</ul>
+							</div>
+							<div class="col">
+								<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+									<div>1220</div>
+								</a>
+								<a href="/dedecms/plus/stow.php?aid=29" target="_blank">收藏</a>
+     							<a href="/dedecms/plus/erraddsave.php?aid=29&title=简洁纯净的CSS表单设计实例" target="_blank">挑错</a>
+     							<a href="/dedecms/plus/recommend.php?aid=29" target="_blank">推荐</a>
+     							<a href="#" onClick="window.print();">打印</a>
+							</div>
+						</footer>
+					</article>
+					<!-- <div class="sharing">
+						<div class="title"><i class="ion-android-share-alt"></i> Sharing is caring</div>
+						<ul class="social">
+							<li>
+								<a href="#" class="facebook">
+									<i class="ion-social-facebook"></i> Facebook
+								</a>
+							</li>
+							<li>
+								<a href="#" class="twitter">
+									<i class="ion-social-twitter"></i> Twitter
+								</a>
+							</li>
+							<li>
+								<a href="#" class="googleplus">
+									<i class="ion-social-googleplus"></i> Google+
+								</a>
+							</li>
+							<li>
+								<a href="#" class="linkedin">
+									<i class="ion-social-linkedin"></i> Linkedin
+								</a>
+							</li>
+							<li>
+								<a href="#" class="skype">
+									<i class="ion-ios-email-outline"></i> Email
+								</a>
+							</li>
+							<li class="count">
+								20
+								<div>Shares</div>
+							</li>
+						</ul>
+					</div> -->
+					<div class="line">
+						<div>作者</div>
+					</div>
+					
+					<div class="line">
+						<div>你可能喜欢</div>
+					</div>
+					<div class="row">
+						
+						
+					</div>
+					<div class="line thin"></div>
+					<div class="comments">
+						<h2 class="title">3 Responses <a href="#">Write a Response</a></h2>
+						<div class="comment-list">
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+								<div class="reply-list">
+									<div class="item">
+										<div class="user">
+											<figure>
+												<img src="images/img01.jpg">
+											</figure>
+											<div class="details">
+												<h5 class="name">Mark Otto</h5>
+												<div class="time">24 Hours</div>
+												<div class="description">
+													Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+													commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+													esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+													cupidatat non
+													proident, sunt in culpa qui officia deserunt mollit anim id est
+													laborum.
+												</div>
+												<footer>
+													<a href="#">Reply</a>
+												</footer>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+							</div>
+						</div>
+						<form class="row">
+							<div class="col-md-12">
+								<h3 class="title">Leave Your Response</h3>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="name">Name <span class="required"></span></label>
+								<input type="text" id="name" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="email">Email <span class="required"></span></label>
+								<input type="email" id="email" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="website">Website</label>
+								<input type="url" id="website" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-12">
+								<label for="message">Response <span class="required"></span></label>
+								<textarea class="form-control" name="message"
+									placeholder="Write your response ..."></textarea>
+							</div>
+							<div class="form-group col-md-12">
+								<button class="btn btn-primary">Send Response</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-4 sidebar" id="sidebar">
+					<!-- <aside>
+							<div class="aside-body">
+								<figure class="ads">
+									<img src="images/ad.png">
+									<figcaption>Advertisement</figcaption>
+								</figure>
+							</div>
+						</aside> -->
+					<aside>
+						<h1 class="aside-title">最新文章</h1>
+						<div class="aside-body">
+							<article class="article-fw">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/div-css/2010/0407/33.html">
+											<img src="http://localhost/dedecms/uploads/allimg/c100407/12F60395AI60-21A37_lit.png" alt="你应当了解的5个CSS3新技术">
+										</a>
+									</figure>
+									<div class="details">
+										<div class="detail">
+											<div class="time">2010-04-07</div>
+											<div class="category"><a href="<a href='/dedecms/a/webbase/div-css/'>DIV&CSS</a>">DIV&CSS</a>
+											</div>
+										</div>
+										<h1><a href="/dedecms/a/webbase/div-css/2010/0407/33.html">你应当了解的5个CSS3新技术</a></h1>
+										<p>
+											
+										</p>
+									</div>
+								</div>
+							</article>
+
+							<div class="line"></div>
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/div-css/2010/0407/30.html">
+											<img src="http://localhost/dedecms/uploads/allimg/c100407/12F60393KXP-S429_lit.gif" alt="精选15个国外CSS框架">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/div-css/2010/0407/30.html">精选15个国外CSS框架</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/div-css/2010/0407/31.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="使用CSS为图片添加更多趣">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/div-css/2010/0407/31.html">使用CSS为图片添加更多趣</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/div-css/2010/0407/32.html">
+											<img src="http://localhost/dedecms/uploads/allimg/c100407/12F60394543310-14b8_lit.png" alt="20个让你学习并精通CSS的网">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/div-css/2010/0407/32.html">20个让你学习并精通CSS的网</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+
+						</div>
+					</aside>
+					<aside>
+						<div class="aside-body">
+							<form class="newsletter">
+								<div class="icon">
+									<i class="ion-ios-email-outline"></i>
+									<h1>Newsletter</h1>
+								</div>
+								<div class="input-group">
+									<input type="email" class="form-control email" placeholder="Your mail">
+									<div class="input-group-btn">
+										<button class="btn btn-primary"><i class="ion-paper-airplane"></i></button>
+									</div>
+								</div>
+								<p>By subscribing you will receive new articles in your email.</p>
+							</form>
+						</div>
+					</aside>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+		<!-- Start footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">气象海洋</h1>
+						<div class="block-body">
+							<figure class="foot-logo">
+								<img src="images/logo-light.png" class="img-responsive" alt="Logo">
+							</figure>
+							<p class="brand-description">
+								Magz is a HTML5 &amp; CSS3 magazine template based on Bootstrap 3.
+							</p>
+							<a href="page.html" class="btn btn-magz white">About Us <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">友情链接 <div class="right"><a href="#">更多 <i
+										class="ion-ios-arrow-thin-right"></i></a></div>
+						</h1>
+						<div class="block-body">
+							<ul class="tags">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">新闻</h1>
+						<div class="block-body">
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img12.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">Donec consequat lorem quis augue pharetra</a></h1>
+									</div>
+								</div>
+							</article>
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img14.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">eu dapibus risus aliquam etiam ut venenatis</a></h1>
+									</div>
+								</div>
+							</article>
+
+							<a href="#" class="btn btn-magz white btn-block">更多 <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-12 col-sm-6">
+					<div class="block">
+						<h1 class="block-title">联系我们</h1>
+						<div class="block-body">
+							<p>Follow us and stay in touch to get the latest news</p>
+							<ul class="social trp">
+								<li>
+									<a href="#" class="facebook">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="twitter">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-twitter-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="youtube">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-youtube-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="googleplus">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-googleplus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="instagram">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-instagram-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tumblr">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-tumblr"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dribbble">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-dribbble"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="linkedin">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="skype">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-skype"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="rss">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-rss"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="block">
+						<div class="block-body no-margin">
+							<ul class="footer-nav-horizontal">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Partner</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="page.html">About</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="copyright">
+						COPYRIGHT &copy; 气象海洋 2020. ALL RIGHT RESERVED. <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- JS -->
+	<script src="/dedecms/templets/magz/js/jquery.js"></script>
+	<script src="/dedecms/templets/magz/js/jquery.migrate.js"></script>
+	<script src="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.js"></script>
+	<script>
+		var $target_end = $(".best-of-the-week");
+	</script>
+	<script src="/dedecms/templets/magz/scripts/jquery-number/jquery.number.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/easescroll/jquery.easeScroll.js"></script>
+	<script src="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/toast/jquery.toast.min.js"></script>
+	<script src="/dedecms/templets/magz/js/demo.js"></script>
+	<script src="/dedecms/templets/magz/js/e-magz.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>我的网站</title>
+  	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.css">
+	<!-- IonIcons -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/ionicons/css/ionicons.min.css">
+	<!-- Toast -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/toast/jquery.toast.min.css">
+	<!-- OwlCarousel -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/magnific-popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.css">
+	<!-- Custom style -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/style.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/skins/all.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/demo.css">
+</head>
+
+<body class="skin-blue">
+  <header class="primary">
+  <div class="firstbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="brand">
+            <a href="/dedecms">
+              <img src="images/logo.png" alt="Magz Logo">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <form class="search" autocomplete="off">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Type something here">
+                <div class="input-group-btn">
+                  <button class="btn btn-primary"><i class="ion-search"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="help-block">
+              <div>热门:</div>
+              <ul>
+                
+                <li><a href='/dedecms/tags.php?/%E5%B8%83%E5%B1%80/'>布局</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E6%88%91%E4%BB%AC/'>我们</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Ajax/'>Ajax</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E7%94%A8/'>用</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Dreamweaver/'>Dreamweaver</a></li>
+                
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 col-sm-12 text-right">
+          <ul class="nav-icons">
+            <li><a href="/dedecms/member/index_do.php?fmdo=user&dopost=regnew"><i class="ion-person-add"></i>
+                <div>注 册</div>
+              </a></li>
+            <li><a href="/dedecms/member/login.php"><i class="ion-person"></i>
+                <div>登 录</div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start nav -->
+  <nav class="menu">
+    <div class="container">
+      <div class="brand">
+        <a href="#">
+          <img src="images/logo.png" alt="Magz Logo">
+        </a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="menu" data-target="#menu-list"><i class="ion-navicon-round"></i></a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="sidebar" data-target="#sidebar"><i class="ion-ios-arrow-left"></i></a>
+      </div>
+      <div id="menu-list">
+        <ul class="nav-list">
+          <li class="for-tablet nav-title"><a>菜单</a></li>
+          <li class="for-tablet"><a href="/dedecms/member/login.php">登 录</a></li>
+          <li class="for-tablet"><a href="/dedecms/member/index_do.php?fmdo=user&dopost=regnew">注 册</a></li>
+          <li><a href="/dedecms/">主页</a></li>
+          <li class="dropdown magz-dropdown"><a href="/dedecms/a/webbase/">网页基础 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+              <li><a href="/dedecms/a/webbase/html/">HTML</a></li>
+              
+              <li><a href="/dedecms/a/webbase/div-css/">DIV&CSS</a></li>
+              
+              <li><a href="/dedecms/a/webbase/javascript-ajax/">Javascript/Ajax</a></li>
+              
+              <li><a href="/dedecms/a/webbase/dreamweaver/">Dreamweaver</a></li>
+              
+            </ul>
+          </li><li class="dropdown magz-dropdown"><a href="/dedecms/a/pics/">站长图集 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+            </ul>
+          </li><li class="dropdown magz-dropdown"><a href="/dedecms/a/downloads/">软件下载 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+            </ul>
+          </li><li class="dropdown magz-dropdown"><a href="/dedecms/a/xinwen/">新闻 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+            </ul>
+          </li>
+          <li class="dropdown magz-dropdown magz-dropdown-megamenu"><a href="#">网上公开 <i
+            class="ion-ios-arrow-right"></i>
+          <div class="badge">Hot</div>
+
+          <div class="dropdown-menu megamenu">
+            <div class="megamenu-inner">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="megamenu-title">测试功能</h2>
+                    </div>
+                  </div>
+                  <ul class="vertical-menu">
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                    <li><a href="#"><i class="ion-ios-circle-outline"></i> 测试功能</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2 class="megamenu-title">网上信箱</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="队长信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">队长信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="政委信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">政委信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="article col-md-4 mini">
+                      <div class="inner">
+                        <figure>
+                          <a href="#">
+                            <img src="images/news/img10.jpg" alt="纪委信箱">
+                          </a>
+                        </figure>
+                        <div class="padding">
+                          <div class="detail">
+                            <div class="time">欢迎来信</div>
+                            <div class="category"><a href="#">在线</a></div>
+                          </div>
+                          <h2><a href="single.html">政委信箱</a></h2>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </li>
+          <li class="dropdown magz-dropdown"><a href="#">Dropdown Icons <i class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="icon ion-person"></i> My Account</a></li>
+              <li><a href="#"><i class="icon ion-heart"></i> Favorite</a></li>
+              <li><a href="#"><i class="icon ion-chatbox"></i> Comments</a></li>
+              <li><a href="#"><i class="icon ion-key"></i> Change Password</a></li>
+              <li><a href="#"><i class="icon ion-settings"></i> Settings</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon ion-log-out"></i> Logout</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End nav -->
+</header>
+
+	<section class="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					
+					<div class="owl-carousel owl-theme slide" id="featured">
+						<div class="item">
+							<article class="featured">
+								<div class="overlay"></div>
+								<figure>
+									<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G42130.jpg" alt="流连忘返的香樟大道">
+								</figure>
+								<div class="details">
+									<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+									<h1><a href="/dedecms/a/pics/2010/0407/89.html">流连忘返的香樟大道</a></h1>
+									<div class="time">2010-04-07</div>
+								</div>
+							</article>
+
+						</div>
+						<div class="item">
+							<article class="featured">
+								<div class="overlay"></div>
+								<figure>
+									<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G40559.jpg" alt="美丽的风景尽收眼底">
+								</figure>
+								<div class="details">
+									<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+									<h1><a href="/dedecms/a/pics/2010/0407/88.html">美丽的风景尽收眼底</a></h1>
+									<div class="time">2010-04-07</div>
+								</div>
+							</article>
+						</div>
+
+
+					</div>
+					
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="headline">
+						<div class="nav" id="headline-nav">
+							<a class="left carousel-control" role="button" data-slide="prev">
+								<span class="ion-ios-arrow-left" aria-hidden="true"></span>
+								<span class="sr-only">上一条</span>
+							</a>
+							<a class="right carousel-control" role="button" data-slide="next">
+								<span class="ion-ios-arrow-right" aria-hidden="true"></span>
+								<span class="sr-only">下一条</span>
+							</a>
+						</div>
+						<div class="owl-carousel owl-theme" id="headline">
+							<div class="item">
+								<a href="/dedecms/a/pics/2010/0407/96.html">我的眼界-一些关于花的照片</a>
+							</div>
+<div class="item">
+								<a href="/dedecms/a/pics/2010/0407/95.html">原创风景图片</a>
+							</div>
+<div class="item">
+								<a href="/dedecms/a/pics/2010/0407/94.html">武夷山的美景真是不错</a>
+							</div>
+<div class="item">
+								<a href="/dedecms/a/pics/2010/0407/93.html">海岛风光</a>
+							</div>
+<div class="item">
+								<a href="/dedecms/a/webbase/html/2010/0407/92.html">DedeCMS V5.6 开发日志及新建议提交贴</a>
+							</div>
+
+						</div>
+					</div>
+					<h1 class="title-col">
+						最新资讯
+						<div class="carousel-nav" id="hot-news-nav">
+							<div class="prev">
+								<i class="ion-ios-arrow-left"></i>
+							</div>
+							<div class="next">
+								<i class="ion-ios-arrow-right"></i>
+							</div>
+						</div>
+					</h1>
+					<div class="body-col vertical-slider" data-max="4" data-nav="#hot-news-nav"
+						data-item="article">
+						<article class="article-mini">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">
+										<img src="/dedecms/images/defaultpic.gif" alt="招聘启事 标题='织梦大家庭新年招募第一波">
+									</a>
+								</figure>
+								<div class="padding">
+									<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">招聘启事 标题='织梦大家庭新年招募第一波</a></h1>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a></div>
+										<div class="time">2020-03-18</div>
+									</div>
+								</div>
+							</div>
+						</article>
+<article class="article-mini">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/pics/2010/0407/96.html">
+										<img src="/dedecms/images/defaultpic.gif" alt="我的眼界-一些关于花的照片">
+									</a>
+								</figure>
+								<div class="padding">
+									<h1><a href="/dedecms/a/pics/2010/0407/96.html">我的眼界-一些关于花的照片</a></h1>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+										<div class="time">2010-04-07</div>
+									</div>
+								</div>
+							</div>
+						</article>
+<article class="article-mini">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/pics/2010/0407/95.html">
+										<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G52636.jpg" alt="原创风景图片">
+									</a>
+								</figure>
+								<div class="padding">
+									<h1><a href="/dedecms/a/pics/2010/0407/95.html">原创风景图片</a></h1>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+										<div class="time">2010-04-07</div>
+									</div>
+								</div>
+							</div>
+						</article>
+<article class="article-mini">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/pics/2010/0407/94.html">
+										<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G51627.jpg" alt="武夷山的美景真是不错">
+									</a>
+								</figure>
+								<div class="padding">
+									<h1><a href="/dedecms/a/pics/2010/0407/94.html">武夷山的美景真是不错</a></h1>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+										<div class="time">2010-04-07</div>
+									</div>
+								</div>
+							</div>
+						</article>
+<article class="article-mini">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/pics/2010/0407/93.html">
+										<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G50112.jpg" alt="海岛风光">
+									</a>
+								</figure>
+								<div class="padding">
+									<h1><a href="/dedecms/a/pics/2010/0407/93.html">海岛风光</a></h1>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+										<div class="time">2010-04-07</div>
+									</div>
+								</div>
+							</div>
+						</article>
+<article class="article-mini">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/webbase/html/2010/0407/92.html">
+										<img src="/dedecms/images/defaultpic.gif" alt="DedeCMS V5.6 开发日志及新建议提交贴">
+									</a>
+								</figure>
+								<div class="padding">
+									<h1><a href="/dedecms/a/webbase/html/2010/0407/92.html">DedeCMS V5.6 开发日志及新建议提交贴</a></h1>
+									<div class="detail">
+										<div class="category"><a href="<a href='/dedecms/a/webbase/html/'>HTML</a>">HTML</a></div>
+										<div class="time">2010-04-07</div>
+									</div>
+								</div>
+							</div>
+						</article>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="line">
+						<div>推荐阅读</div>
+					</div>
+				</div>
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-6 trending-tags">
+							<h1 class="title-col">热搜榜</h1>
+							<div class="body-col">
+								<ol class="tags-list">
+									
+									<li><a href="/dedecms/tags.php?/%E5%B8%83%E5%B1%80/">布局</a></li>
+									
+									<li><a href="/dedecms/tags.php?/%E6%88%91%E4%BB%AC/">我们</a></li>
+									
+									<li><a href="/dedecms/tags.php?/Ajax/">Ajax</a></li>
+									
+									<li><a href="/dedecms/tags.php?/%E7%94%A8/">用</a></li>
+									
+									<li><a href="/dedecms/tags.php?/Dreamweaver/">Dreamweaver</a></li>
+									
+									<li><a href="/dedecms/tags.php?/8/">8</a></li>
+									
+									<li><a href="/dedecms/tags.php?/cs3/">cs3</a></li>
+									
+									<li><a href="/dedecms/tags.php?/%E5%BD%A9%E8%9B%8B/">彩蛋</a></li>
+									
+									<li><a href="/dedecms/tags.php?/CS3%E6%96%B0%E5%8A%9F%E8%83%BD/">CS3新功能</a></li>
+									
+									<li><a href="/dedecms/tags.php?/%E4%B8%8B%E8%BD%BD/">下载</a></li>
+									
+								</ol>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<h1 class="title-col">
+								最新资讯
+								<div class="carousel-nav" id="hot-news-nav">
+									<div class="prev">
+										<i class="ion-ios-arrow-left"></i>
+									</div>
+									<div class="next">
+										<i class="ion-ios-arrow-right"></i>
+									</div>
+								</div>
+							</h1>
+							<div class="body-col vertical-slider" data-max="4" data-nav="#hot-news-nav"
+								data-item="article">
+								<article class="article-mini">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">
+												<img src="/dedecms/images/defaultpic.gif" alt="招聘启事 标题='织梦大家庭新年招募第一波">
+											</a>
+										</figure>
+										<div class="padding">
+											<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">招聘启事 标题='织梦大家庭新年招募第一波</a></h1>
+											<div class="detail">
+												<div class="category"><a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a></div>
+												<div class="time">2020-03-18</div>
+											</div>
+										</div>
+									</div>
+								</article>
+<article class="article-mini">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/pics/2010/0407/96.html">
+												<img src="/dedecms/images/defaultpic.gif" alt="我的眼界-一些关于花的照片">
+											</a>
+										</figure>
+										<div class="padding">
+											<h1><a href="/dedecms/a/pics/2010/0407/96.html">我的眼界-一些关于花的照片</a></h1>
+											<div class="detail">
+												<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+												<div class="time">2010-04-07</div>
+											</div>
+										</div>
+									</div>
+								</article>
+<article class="article-mini">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/pics/2010/0407/95.html">
+												<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G52636.jpg" alt="原创风景图片">
+											</a>
+										</figure>
+										<div class="padding">
+											<h1><a href="/dedecms/a/pics/2010/0407/95.html">原创风景图片</a></h1>
+											<div class="detail">
+												<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+												<div class="time">2010-04-07</div>
+											</div>
+										</div>
+									</div>
+								</article>
+<article class="article-mini">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/pics/2010/0407/94.html">
+												<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G51627.jpg" alt="武夷山的美景真是不错">
+											</a>
+										</figure>
+										<div class="padding">
+											<h1><a href="/dedecms/a/pics/2010/0407/94.html">武夷山的美景真是不错</a></h1>
+											<div class="detail">
+												<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+												<div class="time">2010-04-07</div>
+											</div>
+										</div>
+									</div>
+								</article>
+<article class="article-mini">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/pics/2010/0407/93.html">
+												<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G50112.jpg" alt="海岛风光">
+											</a>
+										</figure>
+										<div class="padding">
+											<h1><a href="/dedecms/a/pics/2010/0407/93.html">海岛风光</a></h1>
+											<div class="detail">
+												<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+												<div class="time">2010-04-07</div>
+											</div>
+										</div>
+									</div>
+								</article>
+<article class="article-mini">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/webbase/html/2010/0407/92.html">
+												<img src="/dedecms/images/defaultpic.gif" alt="DedeCMS V5.6 开发日志及新建议提交贴">
+											</a>
+										</figure>
+										<div class="padding">
+											<h1><a href="/dedecms/a/webbase/html/2010/0407/92.html">DedeCMS V5.6 开发日志及新建议提交贴</a></h1>
+											<div class="detail">
+												<div class="category"><a href="<a href='/dedecms/a/webbase/html/'>HTML</a>">HTML</a></div>
+												<div class="time">2010-04-07</div>
+											</div>
+										</div>
+									</div>
+								</article>
+
+
+							</div>
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="row">
+								<article class="article col-md-12">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">
+												<img src="/dedecms/images/defaultpic.gif" alt="招聘启事 标题='织梦大家">
+											</a>
+										</figure>
+										<div class="padding">
+											<div class="detail">
+												<div class="time">2020-03-18</div>
+												<div class="category"><a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a></div>
+											</div>
+											<h2><a href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">招聘启事 标题='织梦大家</a></h2>
+											<p></p>
+											<footer>
+												<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+													<div>1263</div>
+												</a>
+												<a class="btn btn-primary more" href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">
+													<div>更多</div>
+													<div><i class="ion-ios-arrow-thin-right"></i></div>
+												</a>
+											</footer>
+										</div>
+									</div>
+								</article>
+<article class="article col-md-12">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/pics/2010/0407/89.html">
+												<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G42130.jpg" alt="流连忘返的香樟大道">
+											</a>
+										</figure>
+										<div class="padding">
+											<div class="detail">
+												<div class="time">2010-04-07</div>
+												<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+											</div>
+											<h2><a href="/dedecms/a/pics/2010/0407/89.html">流连忘返的香樟大道</a></h2>
+											<p></p>
+											<footer>
+												<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+													<div>1263</div>
+												</a>
+												<a class="btn btn-primary more" href="/dedecms/a/pics/2010/0407/89.html">
+													<div>更多</div>
+													<div><i class="ion-ios-arrow-thin-right"></i></div>
+												</a>
+											</footer>
+										</div>
+									</div>
+								</article>
+
+								
+							</div>
+							
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="row">
+								<article class="article col-md-12">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/pics/2010/0407/88.html">
+												<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G40559.jpg" alt="美丽的风景尽收眼底">
+											</a>
+										</figure>
+										<div class="padding">
+											<div class="detail">
+												<div class="time">2010-04-07</div>
+												<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+											</div>
+											<h2><a href="/dedecms/a/pics/2010/0407/88.html">美丽的风景尽收眼底</a></h2>
+											<p></p>
+											<footer>
+												<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+													<div>1263</div>
+												</a>
+												<a class="btn btn-primary more" href="/dedecms/a/pics/2010/0407/88.html">
+													<div>更多</div>
+													<div><i class="ion-ios-arrow-thin-right"></i></div>
+												</a>
+											</footer>
+										</div>
+									</div>
+								</article>
+<article class="article col-md-12">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/downloads/2010/0407/76.html">
+												<img src="http://localhost/dedecms/uploads/allimg/100407/1_040G0204C631.jpg" alt="DedeCms V5.1（GBK/UTF8）版">
+											</a>
+										</figure>
+										<div class="padding">
+											<div class="detail">
+												<div class="time">2010-04-07</div>
+												<div class="category"><a href="<a href='/dedecms/a/downloads/'>软件下载</a>">软件下载</a></div>
+											</div>
+											<h2><a href="/dedecms/a/downloads/2010/0407/76.html">DedeCms V5.1（GBK/UTF8）版</a></h2>
+											<p></p>
+											<footer>
+												<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+													<div>1263</div>
+												</a>
+												<a class="btn btn-primary more" href="/dedecms/a/downloads/2010/0407/76.html">
+													<div>更多</div>
+													<div><i class="ion-ios-arrow-thin-right"></i></div>
+												</a>
+											</footer>
+										</div>
+									</div>
+								</article>
+
+							</div>
+						</div>
+					</div> -->
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-4 sidebar">
+					<aside>
+						<ul class="nav nav-tabs nav-justified" role="tablist">
+							<li class="active">
+								<a href="#recomended" aria-controls="recomended" role="tab" data-toggle="tab">
+									<i class="ion-android-star-outline"></i> 资讯热榜
+								</a>
+							</li>
+							<li>
+								<a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">
+									<i class="ion-ios-chatboxes-outline"></i> 通知公示
+								</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="recomended">
+								<article class="article-fw">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/pics/2010/0407/89.html">
+												<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G42130.jpg" alt="流连忘返的香樟大道">
+											</a>
+										</figure>
+										<div class="details">
+											<div class="detail">
+												<div class="time">2010-04-07</div>
+												<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+											</div>
+											<h1><a href="/dedecms/a/pics/2010/0407/89.html">流连忘返的香樟大道</a></h1>
+											<p>
+												
+											</p>
+										</div>
+									</div>
+								</article>
+
+								<div class="line"></div>
+								<article class="article-mini">
+									<div class="inner">
+										<figure>
+											<a href="/dedecms/a/pics/2010/0407/88.html">
+												<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G40559.jpg" alt="美丽的风景尽收眼底">
+											</a>
+										</figure>
+										<div class="padding">
+											<h1><a href="/dedecms/a/pics/2010/0407/88.html">美丽的风景尽收眼底</a></h1>
+											<div class="detail">
+												<div class="category"><a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a></div>
+												<div class="time">2010-04-07</div>
+											</div>
+										</div>
+									</div>
+								</article>
+
+							</div>
+							<div class="tab-pane comments" id="comments">
+								<div class="comment-list sm">
+									<div class="item">
+										<div class="user">
+											<figure>
+												<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G42130.jpg" alt="User Picture">
+											</figure>
+											<div class="details">
+												<h5 class="name">Mark Otto</h5>
+												<div class="time">2010-04-07</div>
+												<div class="description">
+													流连忘返的香樟大道
+												</div>
+											</div>
+										</div>
+									</div>
+<div class="item">
+										<div class="user">
+											<figure>
+												<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G40559.jpg" alt="User Picture">
+											</figure>
+											<div class="details">
+												<h5 class="name">Mark Otto</h5>
+												<div class="time">2010-04-07</div>
+												<div class="description">
+													美丽的风景尽收眼底
+												</div>
+											</div>
+										</div>
+									</div>
+
+ 
+								</div>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="line top">
+						<div>气象知识</div>
+					</div>
+				</div>
+				<div class="col-md-8 col-sm-12 col-xs-12">
+					<div class="row">
+						<article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/pics/2010/0407/89.html">
+										<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G42130.jpg" alt="流连忘返的香樟大道">
+									</a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a>
+										</div>
+										<div class="time">2010-04-07</div>
+									</div>
+									<h1><a href="/dedecms/a/pics/2010/0407/89.html">流连忘返的香樟大道</a></h1>
+									<p>
+										流连忘返的香樟大道
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>273</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/pics/2010/0407/89.html">
+											<div>More</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article>
+<article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/pics/2010/0407/88.html">
+										<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G40559.jpg" alt="美丽的风景尽收眼底">
+									</a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a>
+										</div>
+										<div class="time">2010-04-07</div>
+									</div>
+									<h1><a href="/dedecms/a/pics/2010/0407/88.html">美丽的风景尽收眼底</a></h1>
+									<p>
+										
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>273</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/pics/2010/0407/88.html">
+											<div>More</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article>
+
+						
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-4 sidebar">
+					<aside>
+						<div class="aside-body">
+							<div class="featured-author">
+								<div class="featured-author-inner">
+									<div class="featured-author-cover"
+										style="background-image: url('images/news/img15.jpg');">
+										<div class="badges">
+											<div class="badge-item"><i class="ion-star"></i> 广州</div>
+										</div>
+										<div class="featured-author-center">
+											<figure class="featured-author-picture">
+												<img src="images/img01.jpg" alt="25℃">
+											</figure>
+											<div class="featured-author-info">
+												<h2 class="name">25℃</h2>
+												<div class="desc">舒适</div>
+											</div>
+										</div>
+									</div>
+									<div class="featured-author-body">
+										<div class="featured-author-count">
+											<div class="item">
+												<a href="#">
+													<div class="name">风向</div>
+													<div class="value">东南</div>
+												</a>
+											</div>
+											<div class="item">
+												<a href="#">
+													<div class="name">风速</div>
+													<div class="value">2~3节</div>
+												</a>
+											</div>
+											<div class="item">
+												<a href="#">
+													<div class="name">湿度</div>
+													<div class="value">80%</div>
+												</a>
+											</div>
+										</div>
+										<div class="featured-author-quote">
+											"test"
+										</div>
+										<div class="block">
+											<h2 class="block-title">Photos</h2>
+											<div class="block-body">
+												<ul class="item-list-round" data-magnific="gallery">
+													<li><a href="images/news/img06.jpg"
+															style="background-image: url('images/news/img06.jpg');"></a>
+													</li>
+													<li><a href="images/news/img07.jpg"
+															style="background-image: url('images/news/img07.jpg');"></a>
+													</li>
+													<li><a href="images/news/img08.jpg"
+															style="background-image: url('images/news/img08.jpg');"></a>
+													</li>
+													<li><a href="images/news/img09.jpg"
+															style="background-image: url('images/news/img09.jpg');"></a>
+													</li>
+													<li><a href="images/news/img10.jpg"
+															style="background-image: url('images/news/img10.jpg');"></a>
+													</li>
+													<li><a href="images/news/img11.jpg"
+															style="background-image: url('images/news/img11.jpg');"></a>
+													</li>
+													<li><a href="images/news/img12.jpg"
+															style="background-image: url('images/news/img12.jpg');">
+															<div class="more">+2</div>
+														</a></li>
+													<li class="hidden"><a href="images/news/img13.jpg"
+															style="background-image: url('images/news/img13.jpg');"></a>
+													</li>
+													<li class="hidden"><a href="images/news/img14.jpg"
+															style="background-image: url('images/news/img14.jpg');"></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<!-- <div class="featured-author-footer">
+											<a href="#">See All Authors</a>
+										</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="line top">
+						<div>政治工作</div>
+					</div>
+				</div>
+				<div class="col-md-8 col-sm-12 col-xs-12">
+					<div class="row">
+						<article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/pics/2010/0407/89.html">
+										<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G42130.jpg" alt="流连忘返的香樟大道">
+									</a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a>
+										</div>
+										<div class="time">2010-04-07</div>
+									</div>
+									<h1><a href="/dedecms/a/pics/2010/0407/89.html">流连忘返的香樟大道</a></h1>
+									<p>
+										流连忘返的香樟大道
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>273</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/pics/2010/0407/89.html">
+											<div>More</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article>
+<article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/pics/2010/0407/88.html">
+										<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G40559.jpg" alt="美丽的风景尽收眼底">
+									</a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a>
+										</div>
+										<div class="time">2010-04-07</div>
+									</div>
+									<h1><a href="/dedecms/a/pics/2010/0407/88.html">美丽的风景尽收眼底</a></h1>
+									<p>
+										
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>273</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/pics/2010/0407/88.html">
+											<div>More</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article>
+
+						
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-4 sidebar">
+					<aside>
+						<h1 class="aside-title">热点新闻 <a href="#" class="all">更多 <i
+									class="ion-ios-arrow-right"></i></a></h1>
+						<div class="aside-body">
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="招聘启事 标题='织梦大家">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">招聘启事 标题='织梦大家</a>
+										</h1>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/dreamweaver/2010/0407/59.html">
+											<img src="http://localhost/dedecms/uploads/allimg/c100407/12F60433360W0-19232_lit.jpg" alt="Dreamweaver基础教程：层及其">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/59.html">Dreamweaver基础教程：层及其</a>
+										</h1>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/dreamweaver/2010/0407/57.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="插入的Flash添加透明或其他">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/57.html">插入的Flash添加透明或其他</a>
+										</h1>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/43.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="JavaScript的9个陷阱及评点">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/43.html">JavaScript的9个陷阱及评点</a>
+										</h1>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/40.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="JavaScript开发时的五个小提">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/40.html">JavaScript开发时的五个小提</a>
+										</h1>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/javascript-ajax/2010/0407/39.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="Web2.0十大Ajax安全漏洞以及">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/javascript-ajax/2010/0407/39.html">Web2.0十大Ajax安全漏洞以及</a>
+										</h1>
+									</div>
+								</div>
+							</article>
+
+
+						</div>
+					</aside>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="line top">
+						<div>政治工作</div>
+					</div>
+				</div>
+				<div class="col-md-8 col-sm-6 col-xs-6">
+					<div class="banner">
+						<a href="#">
+							<img src="images/ads.png" alt="Sample Article">
+						</a>
+					</div>
+					<div class="row">
+						<article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/pics/2010/0407/89.html">
+										<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G42130.jpg" alt="流连忘返的香樟大道">
+									</a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a>
+										</div>
+										<div class="time">2010-04-07</div>
+									</div>
+									<h1><a href="/dedecms/a/pics/2010/0407/89.html">流连忘返的香樟大道</a></h1>
+									<p>
+										流连忘返的香樟大道
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>273</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/pics/2010/0407/89.html">
+											<div>More</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article>
+<article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href="/dedecms/a/pics/2010/0407/88.html">
+										<img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G40559.jpg" alt="美丽的风景尽收眼底">
+									</a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/pics/'>站长图集</a>">站长图集</a>
+										</div>
+										<div class="time">2010-04-07</div>
+									</div>
+									<h1><a href="/dedecms/a/pics/2010/0407/88.html">美丽的风景尽收眼底</a></h1>
+									<p>
+										
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>273</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/pics/2010/0407/88.html">
+											<div>More</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article>
+
+						
+					</div>
+					
+					
+				</div>
+				<div class="col-xs-6 col-md-4 sidebar" id="sidebar">
+					<div class="sidebar-title for-tablet">Sidebar</div>
+					
+					
+					
+					<aside id="sponsored">
+						<h1 class="aside-title">快捷链接</h1>
+						<div class="aside-body">
+							<ul class="sponsored">
+								<li>
+									<a href="#"><img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G52636.jpg" alt="观测实况"></a>
+								</li>
+<li>
+									<a href="#"><img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G51627.jpg" alt="观测实况"></a>
+								</li>
+<li>
+									<a href="#"><img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G50112.jpg" alt="观测实况"></a>
+								</li>
+<li>
+									<a href="#"><img src="http://localhost/dedecms/uploads/allimg/100407/1-10040G44302.jpg" alt="观测实况"></a>
+								</li>
+
+
+							</ul>
+						</div>
+					</aside>
+					<aside>
+						<h1 class="aside-title">Videos
+							<div class="carousel-nav" id="video-list-nav">
+								<div class="prev"><i class="ion-ios-arrow-left"></i></div>
+								<div class="next"><i class="ion-ios-arrow-right"></i></div>
+							</div>
+						</h1>
+						<div class="aside-body">
+							<ul class="video-list" data-youtube='"carousel":true, "nav": "#video-list-nav"'>
+								<li><a data-youtube-id="SBjQ9tuuTJQ" data-action="magnific"></a></li>
+								<li><a data-youtube-id="9cVJr3eQfXc" data-action="magnific"></a></li>
+								<li><a data-youtube-id="DnGdoEa1tPg" data-action="magnific"></a></li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="best-of-the-week">
+		<div class="container">
+			<h1>
+				<div class="text">推荐图书</div>
+				<div class="carousel-nav" id="best-of-the-week-nav">
+					<div class="prev">
+						<i class="ion-ios-arrow-left"></i>
+					</div>
+					<div class="next">
+						<i class="ion-ios-arrow-right"></i>
+					</div>
+				</div>
+			</h1>
+			<div class="owl-carousel owl-theme carousel-1">
+							
+				
+				
+			</div>
+		</div>
+  </section>
+  
+  	<!-- Start footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">气象海洋</h1>
+						<div class="block-body">
+							<figure class="foot-logo">
+								<img src="images/logo-light.png" class="img-responsive" alt="Logo">
+							</figure>
+							<p class="brand-description">
+								Magz is a HTML5 &amp; CSS3 magazine template based on Bootstrap 3.
+							</p>
+							<a href="page.html" class="btn btn-magz white">About Us <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">友情链接 <div class="right"><a href="#">更多 <i
+										class="ion-ios-arrow-thin-right"></i></a></div>
+						</h1>
+						<div class="block-body">
+							<ul class="tags">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">新闻</h1>
+						<div class="block-body">
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img12.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">Donec consequat lorem quis augue pharetra</a></h1>
+									</div>
+								</div>
+							</article>
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img14.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">eu dapibus risus aliquam etiam ut venenatis</a></h1>
+									</div>
+								</div>
+							</article>
+
+							<a href="#" class="btn btn-magz white btn-block">更多 <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-12 col-sm-6">
+					<div class="block">
+						<h1 class="block-title">联系我们</h1>
+						<div class="block-body">
+							<p>Follow us and stay in touch to get the latest news</p>
+							<ul class="social trp">
+								<li>
+									<a href="#" class="facebook">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="twitter">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-twitter-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="youtube">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-youtube-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="googleplus">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-googleplus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="instagram">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-instagram-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tumblr">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-tumblr"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dribbble">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-dribbble"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="linkedin">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="skype">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-skype"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="rss">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-rss"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="block">
+						<div class="block-body no-margin">
+							<ul class="footer-nav-horizontal">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Partner</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="page.html">About</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="copyright">
+						COPYRIGHT &copy; 气象海洋 2020. ALL RIGHT RESERVED. <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+	<!-- JS -->
+	<script src="/dedecms/templets/magz/js/jquery.js"></script>
+	<script src="/dedecms/templets/magz/js/jquery.migrate.js"></script>
+	<script src="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.js"></script>
+	<script>
+		var $target_end = $(".best-of-the-week");
+	</script>
+	<script src="/dedecms/templets/magz/scripts/jquery-number/jquery.number.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/easescroll/jquery.easeScroll.js"></script>
+	<script src="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/toast/jquery.toast.min.js"></script>
+	<script src="/dedecms/templets/magz/js/demo.js"></script>
+	<script src="/dedecms/templets/magz/js/e-magz.js"></script>
+</body>
+
+</html>

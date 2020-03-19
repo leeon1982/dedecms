@@ -1,0 +1,82 @@
+<header class="primary">
+  <div class="firstbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="brand">
+            <a href="{dede:global.cfg_cmspath/}">
+              <img src="images/logo.png" alt="Magz Logo">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <form class="search" autocomplete="off">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Type something here">
+                <div class="input-group-btn">
+                  <button class="btn btn-primary"><i class="ion-search"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="help-block">
+              <div>热门:</div>
+              <ul>
+                {dede:tag row='5' getall='1' sort='month'}
+                <li><a href='[field:link/]'>[field:tag /]</a></li>
+                {/dede:tag}
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 col-sm-12 text-right">
+          <ul class="nav-icons">
+            <li><a href="{dede:global.cfg_cmspath/}/member/index_do.php?fmdo=user&dopost=regnew"><i class="ion-person-add"></i>
+                <div>注 册</div>
+              </a></li>
+            <li><a href="{dede:global.cfg_cmspath/}/member/login.php"><i class="ion-person"></i>
+                <div>登 录</div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start nav --> 
+  <nav class="menu">
+    <div class="container">
+      <div class="brand">
+        <a href="#">
+          <img src="images/logo.png" alt="Magz Logo">
+        </a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="menu" data-target="#menu-list"><i class="ion-navicon-round"></i></a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="sidebar" data-target="#sidebar"><i class="ion-ios-arrow-left"></i></a>
+      </div>
+      <div id="menu-list">
+        <ul class="nav-list">
+          <li class="for-tablet nav-title"><a>菜单</a></li>
+          <li class="for-tablet"><a href="{dede:global.cfg_cmspath/}/member/login.php">登 录</a></li>
+          <li class="for-tablet"><a href="{dede:global.cfg_cmspath/}/member/index_do.php?fmdo=user&dopost=regnew">注 册</a></li>
+          <li><a href="{dede:global.cfg_cmsurl/}/">主页</a></li>
+          {dede:channelartlist typeid='top' row='10'}
+          <li class="dropdown magz-dropdown"><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/} <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              {dede:channel type='son' noself='yes'}
+              <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+              {/dede:channel}
+            </ul>
+          </li>
+          {/dede:channelartlist}
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End nav -->
+</header>

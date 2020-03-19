@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Magz is a HTML5 & CSS3 magazine template is based on Bootstrap 3.">
+
+
+	<title>Magz &mdash; Responsive HTML5 &amp; CSS3 Magazine Template</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.css">
+	<!-- IonIcons -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/ionicons/css/ionicons.min.css">
+	<!-- Toast -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/toast/jquery.toast.min.css">
+	<!-- OwlCarousel -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/magnific-popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.css">
+	<!-- Custom style -->
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/style.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/skins/all.css">
+	<link rel="stylesheet" href="/dedecms/templets/magz/css/demo.css">
+</head>
+
+<body>
+	<header class="primary">
+  <div class="firstbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="brand">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Magz Logo">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <form class="search" autocomplete="off">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Type something here">
+                <div class="input-group-btn">
+                  <button class="btn btn-primary"><i class="ion-search"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="help-block">
+              <div>热门:</div>
+              <ul>
+                
+                <li><a href='/dedecms/tags.php?/%E5%B8%83%E5%B1%80/'>布局</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E6%88%91%E4%BB%AC/'>我们</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Ajax/'>Ajax</a></li>
+                
+                <li><a href='/dedecms/tags.php?/%E7%94%A8/'>用</a></li>
+                
+                <li><a href='/dedecms/tags.php?/Dreamweaver/'>Dreamweaver</a></li>
+                
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 col-sm-12 text-right">
+          <ul class="nav-icons">
+            <li><a href="register.html"><i class="ion-person-add"></i>
+                <div>注 册</div>
+              </a></li>
+            <li><a href="login.html"><i class="ion-person"></i>
+                <div>登 录</div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start nav --> 
+  <nav class="menu">
+    <div class="container">
+      <div class="brand">
+        <a href="#">
+          <img src="images/logo.png" alt="Magz Logo">
+        </a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="menu" data-target="#menu-list"><i class="ion-navicon-round"></i></a>
+      </div>
+      <div class="mobile-toggle">
+        <a href="#" data-toggle="sidebar" data-target="#sidebar"><i class="ion-ios-arrow-left"></i></a>
+      </div>
+      <div id="menu-list">
+        <ul class="nav-list">
+          <li class="for-tablet nav-title"><a>Menu</a></li>
+          <li class="for-tablet"><a href="login.html">Login</a></li>
+          <li class="for-tablet"><a href="register.html">Register</a></li>
+          <li><a href="/dedecms/">主页</a></li>
+          <li class="dropdown magz-dropdown"><a href="/dedecms/a/webbase/">网页基础 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+              <li><a href="/dedecms/a/webbase/html/">HTML</a></li>
+              
+              <li><a href="/dedecms/a/webbase/div-css/">DIV&CSS</a></li>
+              
+              <li><a href="/dedecms/a/webbase/javascript-ajax/">Javascript/Ajax</a></li>
+              
+              <li><a href="/dedecms/a/webbase/dreamweaver/">Dreamweaver</a></li>
+              
+            </ul>
+          </li><li class="dropdown magz-dropdown"><a href="/dedecms/a/pics/">站长图集 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+            </ul>
+          </li><li class="dropdown magz-dropdown"><a href="/dedecms/a/downloads/">软件下载 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+            </ul>
+          </li><li class="dropdown magz-dropdown"><a href="/dedecms/a/xinwen/">新闻 <i
+                class="ion-ios-arrow-right"></i></a>
+            <ul class="dropdown-menu">
+              
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End nav -->
+</header>
+
+	<section class="category">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 text-left">
+					<div class="row">
+						<div class="col-md-12">
+							<ol class="breadcrumb">
+								<li><a href="#"><a href='http://localhost/dedecms'>主页</a> > <a href='/dedecms/a/webbase/'>网页基础</a> > <a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a> > </a></li>
+							</ol>
+							<h1 class="page-title">Category: Computer</h1>
+							<p class="page-subtitle">Showing all posts with category <i>Computer</i></p>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="row">
+						<article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/dreamweaver/2010/0408/106.html'><img src='/dedecms/images/defaultpic.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a>
+										</div>
+										<div class="time">2020-03-18 21:15:42</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html"><b>招聘启事 标题='织梦大家庭新年招募第一波</b></a>
+									</h1>
+									<p>
+										2010年，新一年，新征程……
+织梦大家庭招募能够共同创业的新伙伴。
+首要特点：织梦需要的是创业伙伴，而非普通员工。织梦是一个大家共同的创业平台！繁华浮躁的时代，我们需要的是『...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>77</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>1</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/dreamweaver/2010/0407/68.html'><img src='/dedecms/images/defaultpic.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a>
+										</div>
+										<div class="time">2010-04-07 09:39:27</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/68.html">使用Dreamweaver来详细了解CSS的多样性</a>
+									</h1>
+									<p>
+										说明：√属性继承 ×不继承 [ ]为适应元素类型 无[ ]标出为所有元素字体√Font-family√Font-size 9 10 12 14 16 18 24 36 xx-small x-small small medium large x-large xx-large smaller larger√Color√Font-style normal italic obliqu...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/dreamweaver/2010/0407/68.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/dreamweaver/2010/0407/69.html'><img src='/dedecms/images/defaultpic.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a>
+										</div>
+										<div class="time">2010-04-07 09:39:27</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/69.html">用Dreamweaver合理为为网页进行优化</a>
+									</h1>
+									<p>
+										我们为了优化网页、加快网页下载速度，除了对图片进行优化之外，还需对网页其他各个元素进行优化。在网页编织过程中如能充分利用编辑工具，也可以在网页制作中达到优化目的。 下面是Dreamweaver中的一些优化技法: 合理调用CSS 进行网页设计时，运用...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/dreamweaver/2010/0407/69.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/dreamweaver/2010/0407/70.html'><img src='/dedecms/images/defaultpic.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a>
+										</div>
+										<div class="time">2010-04-07 09:39:27</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/70.html">Dreamweaver方便快捷编辑网页标签</a>
+									</h1>
+									<p>
+										不知各位是否有手写代码的习惯。例如：要在一个单元格插入一段CSS代码，或者一段Javascript代码，怎么做才比较快捷方便呢？ 虽然Dreamweaver已经为我们提供了代码视图，可是必竟还要手工去查找，还要来回地切换。虽然也可以用代码视图与编辑视图并存的...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/dreamweaver/2010/0407/70.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/dreamweaver/2010/0407/71.html'><img src='/dedecms/images/defaultpic.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a>
+										</div>
+										<div class="time">2010-04-07 09:39:27</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/71.html">Dreamweaver8创建自定义代码片段的方法</a>
+									</h1>
+									<p>
+										一个好的“偷懒”方法，就好比充满困难的路途中出现一盏明灯，简化了好多繁杂的工作，让你有更多精力做其他事情，做的更顺手。...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/dreamweaver/2010/0407/71.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/dreamweaver/2010/0407/72.html'><img src='/dedecms/images/defaultpic.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a>
+										</div>
+										<div class="time">2010-04-07 09:39:27</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/72.html">在Dreamweaver中为插入的Flash添加透明</a>
+									</h1>
+									<p>
+										Dreamweaver升级到8.0.2后，插入Flash时的代码会有所改变，这是Macromedia为解决IE中的Flash会出现控件激活框而作的更新。要为Flash添加透明等参数有两种方法。...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/dreamweaver/2010/0407/72.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/dreamweaver/2010/0407/66.html'><img src='/dedecms/images/defaultpic.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a>
+										</div>
+										<div class="time">2010-04-07 09:39:26</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/66.html">Dreamweaver网页制作教程：层及其应用</a>
+									</h1>
+									<p>
+										层（Layer）是一种 HTML 页面元素，您可以将它定位在页面上的任意位置。层可以包含文本、图像或其它 HTML 文档。层的出现使网页从二维平面拓展到三维。可以使页面上元素进行重叠和复杂的布局。首先，请看下图： 我们首先来做一个层 1、 在「窗口」菜单...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/dreamweaver/2010/0407/66.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article><article class="col-md-12 article-list">
+							<div class="inner">
+								<figure>
+									<a href='/dedecms/a/webbase/dreamweaver/2010/0407/67.html'><img src='/dedecms/images/defaultpic.gif'/></a>
+								</figure>
+								<div class="details">
+									<div class="detail">
+										<div class="category">
+											<a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a>
+										</div>
+										<div class="time">2010-04-07 09:39:26</div>
+									</div>
+									<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/67.html">网页禁止右键菜单及禁止全选代码</a>
+									</h1>
+									<p>
+										script language=JavaScriptdocument.oncontextmenu=new Function(event.returnValue=false;);document.onselectstart=new Function(event.returnValue=false;);/script 很好用!...
+									</p>
+									<footer>
+										<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+											<div>0</div>
+										</a>
+										<a href="#" class="love"><i class="ion-android-eye-outline"></i>
+											<div>0</div>
+										</a>
+										<a class="btn btn-primary more" href="/dedecms/a/webbase/dreamweaver/2010/0407/67.html">
+											<div>详细...</div>
+											<div><i class="ion-ios-arrow-thin-right"></i></div>
+										</a>
+									</footer>
+								</div>
+							</div>
+						</article>
+						
+						<div class="col-md-12 text-center">
+							<ul class="pagination">
+								<li class="prev"><a href="#"><i class="ion-ios-arrow-left"></i></a></li>
+								<li>首页</li>
+<li class="thisclass">1</li>
+<li><a href='list_5_2.html'>2</a></li>
+<li><a href='list_5_3.html'>3</a></li>
+<li><a href='list_5_2.html'>下一页</a></li>
+<li><a href='list_5_3.html'>末页</a></li>
+<li><select name='sldd' style='width:36px' onchange='location.href=this.options[this.selectedIndex].value;'>
+<option value='list_5_1.html' selected>1</option>
+<option value='list_5_2.html'>2</option>
+<option value='list_5_3.html'>3</option>
+</select></li>
+<li><span class="pageinfo">共 <strong>3</strong>页<strong>20</strong>条</span></li>
+
+								<li class="next"><a href="#"><i class="ion-ios-arrow-right"></i></a></li>
+							</ul>
+							<div class="pagination-help-text">
+								Showing 8 results of 776 &mdash; Page 1
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 sidebar">
+					<!-- <aside>
+						<div class="aside-body">
+							<figure class="ads">
+								<a href="single.html">
+									<img src="images/ad.png">
+								</a>
+								<figcaption>Advertisement</figcaption>
+							</figure>
+						</div>
+					</aside> -->
+					<aside>
+						<h1 class="aside-title">最新文章</h1>
+						<div class="aside-body">
+							<article class="article-fw">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="招聘启事 标题='织梦大家">
+										</a>
+									</figure>
+									<div class="details">
+										<div class="detail">
+											<div class="time">2020-03-18</div>
+											<div class="category"><a href="<a href='/dedecms/a/webbase/dreamweaver/'>Dreamweaver</a>">Dreamweaver</a>
+											</div>
+										</div>
+										<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0408/106.html">招聘启事 标题='织梦大家</a></h1>
+										<p>
+											
+										</p>
+									</div>
+								</div>
+							</article>
+
+							<div class="line"></div>
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/dreamweaver/2010/0407/72.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="在Dreamweaver中为插入的Fl">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/72.html">在Dreamweaver中为插入的Fl</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/dreamweaver/2010/0407/71.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="Dreamweaver8创建自定义代码">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/71.html">Dreamweaver8创建自定义代码</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="/dedecms/a/webbase/dreamweaver/2010/0407/70.html">
+											<img src="/dedecms/images/defaultpic.gif" alt="Dreamweaver方便快捷编辑网页">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="/dedecms/a/webbase/dreamweaver/2010/0407/70.html">Dreamweaver方便快捷编辑网页</a>
+										</h1>
+										<p></p>
+									</div>
+								</div>
+							</article>
+
+						</div>
+					</aside>
+					<aside>
+						<div class="aside-body">
+							<form class="newsletter">
+								<div class="icon">
+									<i class="ion-ios-email-outline"></i>
+									<h1>Newsletter</h1>
+								</div>
+								<div class="input-group">
+									<input type="email" class="form-control email" placeholder="Your mail">
+									<div class="input-group-btn">
+										<button class="btn btn-primary"><i class="ion-paper-airplane"></i></button>
+									</div>
+								</div>
+								<p>By subscribing you will receive new articles in your email.</p>
+							</form>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- Start footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">气象海洋</h1>
+						<div class="block-body">
+							<figure class="foot-logo">
+								<img src="images/logo-light.png" class="img-responsive" alt="Logo">
+							</figure>
+							<p class="brand-description">
+								Magz is a HTML5 &amp; CSS3 magazine template based on Bootstrap 3.
+							</p>
+							<a href="page.html" class="btn btn-magz white">About Us <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">友情链接 <div class="right"><a href="#">更多 <i
+										class="ion-ios-arrow-thin-right"></i></a></div>
+						</h1>
+						<div class="block-body">
+							<ul class="tags">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3 3</a></li>
+								<li><a href="#">4 Design</a></li>
+								<li><a href="#">5 Mind</a></li>
+								<li><a href="#">6 On The Train</a></li>
+								<li><a href="#">at 6.00PM</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="block">
+						<h1 class="block-title">新闻</h1>
+						<div class="block-body">
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img12.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">Donec consequat lorem quis augue pharetra</a></h1>
+									</div>
+								</div>
+							</article>
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="single.html">
+											<img src="images/news/img14.jpg" alt="Sample Article">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="single.html">eu dapibus risus aliquam etiam ut venenatis</a></h1>
+									</div>
+								</div>
+							</article>
+
+							<a href="#" class="btn btn-magz white btn-block">更多 <i
+									class="ion-ios-arrow-thin-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-12 col-sm-6">
+					<div class="block">
+						<h1 class="block-title">联系我们</h1>
+						<div class="block-body">
+							<p>Follow us and stay in touch to get the latest news</p>
+							<ul class="social trp">
+								<li>
+									<a href="#" class="facebook">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="twitter">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-twitter-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="youtube">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-youtube-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="googleplus">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-googleplus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="instagram">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-instagram-outline"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tumblr">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-tumblr"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="dribbble">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-dribbble"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="linkedin">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="skype">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-skype"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="rss">
+										<svg>
+											<rect width="0" height="0" /></svg>
+										<i class="ion-social-rss"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="line"></div>
+					<div class="block">
+						<div class="block-body no-margin">
+							<ul class="footer-nav-horizontal">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">Partner</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="page.html">About</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="copyright">
+						COPYRIGHT &copy; 气象海洋 2020. ALL RIGHT RESERVED. <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- JS -->
+	<script src="/dedecms/templets/magz/js/jquery.js"></script>
+	<script src="/dedecms/templets/magz/js/jquery.migrate.js"></script>
+	<script src="/dedecms/templets/magz/scripts/bootstrap/bootstrap.min.js"></script>
+	<script>
+		var $target_end = $(".best-of-the-week");
+	</script>
+	<script src="/dedecms/templets/magz/scripts/jquery-number/jquery.number.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/easescroll/jquery.easeScroll.js"></script>
+	<script src="/dedecms/templets/magz/scripts/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="/dedecms/templets/magz/scripts/toast/jquery.toast.min.js"></script>
+	<script src="/dedecms/templets/magz/js/demo.js"></script>
+	<script src="/dedecms/templets/magz/js/e-magz.js"></script>
+</body>
+
+</html>

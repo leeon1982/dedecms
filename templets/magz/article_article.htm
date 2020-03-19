@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Magz is a HTML5 & CSS3 magazine template is based on Bootstrap 3.">
+
+
+	<title>Magz &mdash; Responsive HTML5 &amp; CSS3 Magazine Template</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/bootstrap/bootstrap.min.css">
+	<!-- IonIcons -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/ionicons/css/ionicons.min.css">
+	<!-- Toast -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/toast/jquery.toast.min.css">
+	<!-- OwlCarousel -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="{dede:global.cfg_templets_skin/}/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/magnific-popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/scripts/sweetalert/dist/sweetalert.css">
+	<!-- Custom style -->
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/style.css">
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/skins/all.css">
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/demo.css">
+</head>
+
+<body>
+	{dede:include filename="head.htm"/}
+
+	<section class="single">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<ol class="breadcrumb">
+						<li>{dede:field name='position'/}</li>
+
+					</ol>
+					<article class="article main-article">
+						<header>
+							<h1>{dede:field.title/}</h1>
+							<ul class="details">
+								<li>Posted:{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</li>
+								<li><a>Film</a></li>
+								<li>By <a href="#">{dede:field.writer/}</a></li>
+							</ul>
+						</header>
+						<div class="main">
+							<!-- /info -->
+
+							<div class="featured">
+								<figure>
+									<!-- <img src="images/news/img01.jpg"> -->
+									<figcaption>{dede:field.description runphp='yes'} if(@me<>'' )@me = '<p>'.@me.'</p>
+											'; {/dede:field.description}</figcaption>
+								</figure>
+							</div>
+
+							{dede:field.body/}
+							<!-- <blockquote>
+									Free Responsive HTML5 &amp; CSS3 Magazine Template
+								</blockquote>
+								<p>Ut est elit, vehicula tempus volutpat ut, sodales eget odio. Nunc placerat, orci ac iaculis feugiat, sem tellus efficitur tortor, mollis iaculis lacus ante nec risus. Sed consequat vehicula pretium.</p> -->
+						</div>
+						<footer>
+							<div class="col">
+								<ul class="tags">
+									{dede:tag sort='new' getall='0'}
+									<li><a href="[field:link/]">[field:tag /]</a></li>
+									{/dede:tag}
+									
+								</ul>
+							</div>
+							<div class="col">
+								<a href="#" class="love"><i class="ion-android-favorite-outline"></i>
+									<div>1220</div>
+								</a>
+								<a href="{dede:field name='phpurl'/}/stow.php?aid={dede:field.id/}" target="_blank">收藏</a>
+     							<a href="{dede:field name='phpurl'/}/erraddsave.php?aid={dede:field.id/}&title={dede:field.title/}" target="_blank">挑错</a>
+     							<a href="{dede:field name='phpurl'/}/recommend.php?aid={dede:field.id/}" target="_blank">推荐</a>
+     							<a href="#" onClick="window.print();">打印</a>
+							</div>
+						</footer>
+					</article>
+					<!-- <div class="sharing">
+						<div class="title"><i class="ion-android-share-alt"></i> Sharing is caring</div>
+						<ul class="social">
+							<li>
+								<a href="#" class="facebook">
+									<i class="ion-social-facebook"></i> Facebook
+								</a>
+							</li>
+							<li>
+								<a href="#" class="twitter">
+									<i class="ion-social-twitter"></i> Twitter
+								</a>
+							</li>
+							<li>
+								<a href="#" class="googleplus">
+									<i class="ion-social-googleplus"></i> Google+
+								</a>
+							</li>
+							<li>
+								<a href="#" class="linkedin">
+									<i class="ion-social-linkedin"></i> Linkedin
+								</a>
+							</li>
+							<li>
+								<a href="#" class="skype">
+									<i class="ion-ios-email-outline"></i> Email
+								</a>
+							</li>
+							<li class="count">
+								20
+								<div>Shares</div>
+							</li>
+						</ul>
+					</div> -->
+					<div class="line">
+						<div>作者</div>
+					</div>
+					{dede:memberinfos}
+					<div class="author">
+						<figure>
+							<img src="[field:face/]">
+						</figure>
+						<div class="details">
+							<div class="job">Web Developer</div>
+							<h3 class="name">[field:uname/]</h3>
+							<p>Nulla sagittis rhoncus nisi, vel gravida ante. Nunc lobortis condimentum elit, quis porta
+								ipsum rhoncus vitae. Curabitur magna leo, porta vel fringilla gravida, consectetur in
+								libero. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+							<ul class="social trp sm">
+								<li>
+									<a href="#" class="facebook">
+										<svg>
+											<rect /></svg>
+										<i class="ion-social-facebook"></i>
+									</a>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					{/dede:memberinfos}
+					<div class="line">
+						<div>你可能喜欢</div>
+					</div>
+					<div class="row">
+						{dede:arclist flag='c' titlelen=42 row=6}
+						<article class="article related col-md-6 col-sm-6 col-xs-12">
+							<div class="inner">
+								<figure>
+									<a href="[field:arcurl/]">
+										<img src="[field:litpic/]">
+									</a>
+								</figure>
+								<div class="padding">
+									<h2><a href="[field:arcurl/]">[field:title/]</a></h2>
+									<div class="detail">
+										<div class="category"><a href="[field:typelink/]">[field:typename/]</a></div>
+										<div class="time">[field:pubdate function="MyDate('Y-m-d',@me)"/]</div>
+									</div>
+								</div>
+							</div>
+						</article>
+						{/dede:arclist}
+						
+					</div>
+					<div class="line thin"></div>
+					<div class="comments">
+						<h2 class="title">3 Responses <a href="#">Write a Response</a></h2>
+						<div class="comment-list">
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+								<div class="reply-list">
+									<div class="item">
+										<div class="user">
+											<figure>
+												<img src="images/img01.jpg">
+											</figure>
+											<div class="details">
+												<h5 class="name">Mark Otto</h5>
+												<div class="time">24 Hours</div>
+												<div class="description">
+													Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+													commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+													esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+													cupidatat non
+													proident, sunt in culpa qui officia deserunt mollit anim id est
+													laborum.
+												</div>
+												<footer>
+													<a href="#">Reply</a>
+												</footer>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="user">
+									<figure>
+										<img src="images/img01.jpg">
+									</figure>
+									<div class="details">
+										<h5 class="name">Mark Otto</h5>
+										<div class="time">24 Hours</div>
+										<div class="description">
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore <a href="#">magna</a> aliqua. Ut enim
+											ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+										</div>
+										<footer>
+											<a href="#">Reply</a>
+										</footer>
+									</div>
+								</div>
+							</div>
+						</div>
+						<form class="row">
+							<div class="col-md-12">
+								<h3 class="title">Leave Your Response</h3>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="name">Name <span class="required"></span></label>
+								<input type="text" id="name" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="email">Email <span class="required"></span></label>
+								<input type="email" id="email" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="website">Website</label>
+								<input type="url" id="website" name="" class="form-control">
+							</div>
+							<div class="form-group col-md-12">
+								<label for="message">Response <span class="required"></span></label>
+								<textarea class="form-control" name="message"
+									placeholder="Write your response ..."></textarea>
+							</div>
+							<div class="form-group col-md-12">
+								<button class="btn btn-primary">Send Response</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-4 sidebar" id="sidebar">
+					<!-- <aside>
+							<div class="aside-body">
+								<figure class="ads">
+									<img src="images/ad.png">
+									<figcaption>Advertisement</figcaption>
+								</figure>
+							</div>
+						</aside> -->
+					<aside>
+						<h1 class="aside-title">最新文章</h1>
+						<div class="aside-body">
+							{dede:arclist limit='0,1' orderby='pubdate'}
+							<article class="article-fw">
+								<div class="inner">
+									<figure>
+										<a href="[field:arcurl/]">
+											<img src="[field:litpic/]" alt="[field:title/]">
+										</a>
+									</figure>
+									<div class="details">
+										<div class="detail">
+											<div class="time">[field:pubdate function="MyDate('Y-m-d',@me)"/]</div>
+											<div class="category"><a href="[field:typelink/]">[field:typename/]</a>
+											</div>
+										</div>
+										<h1><a href="[field:arcurl/]">[field:title/]</a></h1>
+										<p>
+											[field:arcinfo/]
+										</p>
+									</div>
+								</div>
+							</article>
+							{/dede:arclist}
+							<div class="line"></div>
+							{dede:arclist limit='1,3' orderby='pubdate'}
+							<article class="article-mini">
+								<div class="inner">
+									<figure>
+										<a href="[field:arcurl/]">
+											<img src="[field:litpic/]" alt="[field:title/]">
+										</a>
+									</figure>
+									<div class="padding">
+										<h1><a href="[field:arcurl/]">[field:title/]</a>
+										</h1>
+										<p>[field:arcinfo/]</p>
+									</div>
+								</div>
+							</article>
+							{/dede:arclist}
+						</div>
+					</aside>
+					<aside>
+						<div class="aside-body">
+							<form class="newsletter">
+								<div class="icon">
+									<i class="ion-ios-email-outline"></i>
+									<h1>Newsletter</h1>
+								</div>
+								<div class="input-group">
+									<input type="email" class="form-control email" placeholder="Your mail">
+									<div class="input-group-btn">
+										<button class="btn btn-primary"><i class="ion-paper-airplane"></i></button>
+									</div>
+								</div>
+								<p>By subscribing you will receive new articles in your email.</p>
+							</form>
+						</div>
+					</aside>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	{dede:include filename="foot.htm"/}
+
+	<!-- JS -->
+	<script src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/js/jquery.migrate.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/bootstrap/bootstrap.min.js"></script>
+	<script>
+		var $target_end = $(".best-of-the-week");
+	</script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/jquery-number/jquery.number.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/easescroll/jquery.easeScroll.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/scripts/toast/jquery.toast.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/js/demo.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/js/e-magz.js"></script>
+</body>
+
+</html>

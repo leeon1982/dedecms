@@ -1,0 +1,2 @@
+<?php
+$asktypes = 'a:2:{i:0;a:6:{s:2:"id";s:1:"1";s:4:"name";s:6:"信箱";s:4:"reid";s:1:"0";s:8:"disorder";s:1:"0";s:6:"asknum";s:1:"0";s:10:"askwarrnum";s:1:"0";}i:1;a:6:{s:2:"id";s:1:"2";s:4:"name";s:7:"信箱1";s:4:"reid";s:1:"1";s:8:"disorder";s:1:"0";s:6:"asknum";s:1:"0";s:10:"askwarrnum";s:1:"0";}}';
